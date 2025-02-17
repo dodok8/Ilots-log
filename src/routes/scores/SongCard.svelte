@@ -24,20 +24,22 @@
 
 <div class="score-card">
 	<div class="score-header">
-		<img
-			class="score-image"
-			alt={`File: songs ${score.id}.png`}
-			loading="lazy"
-			src={`https://wiki.rotaeno.cn/${score.imageUrl}`}
-		/>
+		<div class="img-container">
+			<img
+				class="score-image"
+				alt={`File: songs ${score.id}.png`}
+				loading="lazy"
+				src={`https://wiki.rotaeno.cn/${score.imageUrl}`}
+			/>
+		</div>
 		<div class="score-title">
-			<h2>
+			<h3>
 				{#each Object.entries(score.title_localized) as info, idx}
 					{info[1]}
 					{#if idx == Object.entries(score.title_localized).length - 1}{:else}{' / '}
 					{/if}
 				{/each}
-			</h2>
+			</h3>
 			<span class="score-id">ID: {score.id}</span>
 		</div>
 	</div>
@@ -46,8 +48,8 @@
 		{#each score.charts as chart, idx (chart.difficultyLevel)}
 			<div class="chart-row">
 				<div class="difficulty-badge">
-					<span class="level">{chart.difficultyLevel}</span>
-					<span class="decimal">{chart.difficultyDecimal}</span>
+					<span class={`level ${chart.difficultyLevel} `}>{chart.difficultyLevel}</span>
+					<span class={`decimal ${chart.difficultyLevel} `}>{chart.difficultyDecimal}</span>
 				</div>
 				<div class="score-container">
 					<span class="calculated-score">
@@ -67,4 +69,59 @@
 </div>
 
 <style>
+	.img-container {
+		height: 16rem;
+		overflow: hidden;
+		display: flex;
+		align-content: center;
+		justify-content: center;
+		align-items: center;
+		width: fit-content;
+	}
+
+	.img-container > img {
+		height: 110%;
+		border-radius: 50%;
+		border: 5px solid white;
+		box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+	}
+
+	.decimal {
+		color: white;
+	}
+
+	.level.I {
+		color: #1cda1b;
+	}
+	.decimal.I {
+		background-color: #1cda1b;
+	}
+
+	.level.II {
+		color: #3b90ff;
+	}
+	.decimal.II {
+		background-color: #3b90ff;
+	}
+
+	.level.III {
+		color: #ef960d;
+	}
+	.decimal.III {
+		background-color: #ef960d;
+	}
+
+	.level.IV {
+		color: #dc43e5;
+	}
+	.decimal.IV {
+		background-color: #dc43e5;
+	}
+
+	.level.IV-α {
+		color: #bd6eff;
+	}
+	.decimal.IV-α {
+		background-color: #bd6eff;
+	}
 </style>
