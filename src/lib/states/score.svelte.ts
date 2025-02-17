@@ -73,6 +73,9 @@ class Scores {
 	scores: Score[] = $state([]);
 	best30Songs = $derived(getBest30(this.scores));
 	best30Average = $derived(getBest30Average(this.best30Songs));
+	targetRating = $derived(
+		scores.best30Songs[scores.best30Songs.length - 1].difficultyDecimal + 0.3
+	);
 
 	constructor() {
 		this.scores = initializeScores(songs);
