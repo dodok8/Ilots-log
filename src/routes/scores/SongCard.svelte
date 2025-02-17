@@ -4,16 +4,22 @@
 	import { scores } from '$lib/states/score.svelte';
 
 	let { score = $bindable() }: { score: Score } = $props();
+	let saveTimeout: number;
 
-	// 입력값이 변경될 때마다 rating 자동 계산
-	$effect(() => {
-		score.charts.forEach((chart, idx) => {
-			if (chart.score) {
-				chart.rating = calculateSongRating(chart.difficultyDecimal, chart.score);
-				scores.save();
-			}
-		});
-	});
+	// 점수가 변경될 때마다 해당 차트의 rating만 계산하고 debounce된 저장 실행
+	const updateRating = (chart: Score['charts'][0]) => {
+		if (chart.score === 0) {
+			chart.rating = 0;
+		} else if (chart.score !== undefined && chart.score !== null) {
+			chart.rating = calculateSongRating(chart.difficultyDecimal, chart.score);
+		}
+
+		// Debounce save operation
+		clearTimeout(saveTimeout);
+		saveTimeout = setTimeout(() => {
+			scores.save();
+		}, 1000) as unknown as number;
+	};
 </script>
 
 <div class="score-card">
@@ -52,6 +58,7 @@
 						id={`${score.id}_${chart.difficultyLevel}`}
 						type="number"
 						bind:value={chart.score}
+						oninput={() => updateRating(chart)}
 					/>
 				</div>
 			</div>
