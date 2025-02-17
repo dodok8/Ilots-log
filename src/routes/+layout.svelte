@@ -15,15 +15,15 @@
 </main>
 
 <style>
-  nav {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
+	nav {
+		position: sticky;
+		top: 0;
+		z-index: 100;
+	}
 
-  main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
+	main {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 2rem;
+	}
 </style>
