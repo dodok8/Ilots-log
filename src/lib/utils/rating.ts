@@ -32,3 +32,43 @@ export function calculateSongRating(difficulty: number, score: number): number {
 	// Round to four decimal places
 	return Math.round(rating * 10000) / 10000;
 }
+
+export function calculateRequiredScore(difficulty: number, targetRating: number): number {
+	// 목표 레이팅이 난이도+3.6보다 높으면 달성 불가능
+	if (targetRating > difficulty + 3.6) {
+		return -1; // 불가능한 목표
+	}
+
+	// 목표 레이팅이 0이면 500000점 미만이면 됨
+	if (targetRating <= 0) {
+		return 0;
+	}
+
+	let requiredScore: number;
+
+	if (targetRating <= difficulty - 1) {
+		// 900000점 미만 구간
+		requiredScore = 1000000 - (difficulty - targetRating) * 100000;
+	} else if (targetRating <= difficulty) {
+		// 900000-950000점 구간
+		requiredScore = 900000 + (targetRating - (difficulty - 1)) * 50000;
+	} else if (targetRating <= difficulty + 1) {
+		// 950000-980000점 구간
+		requiredScore = 950000 + (targetRating - difficulty) * 30000;
+	} else if (targetRating <= difficulty + 2) {
+		// 980000-1000000점 구간
+		requiredScore = 980000 + (targetRating - (difficulty + 1)) * 20000;
+	} else if (targetRating <= difficulty + 2.4) {
+		// 1000000-1004000점 구간
+		requiredScore = 1000000 + (targetRating - (difficulty + 2)) * 10000;
+	} else if (targetRating <= difficulty + 3.4) {
+		// 1004000-1008000점 구간
+		requiredScore = 1004000 + (targetRating - (difficulty + 2.4)) * 4000;
+	} else {
+		// 1008000-1010000점 구간
+		requiredScore = 1008000 + (targetRating - (difficulty + 3.4)) * 10000;
+	}
+
+	// 점수를 정수로 반올림
+	return Math.ceil(requiredScore);
+}
