@@ -1,24 +1,29 @@
 <script lang="ts">
 	let { children } = $props();
-	import { page } from '$app/state';
+
 	import 'normalize.css';
 	import '../app.css';
+	import Header from './Header.svelte';
 </script>
 
 <nav>
-	<ul>
-		<li aria-current={page.url.pathname === '/' ? 'page' : undefined}>
-			<a href="/">Home</a>
-		</li>
-		<li aria-current={page.url.pathname === '/best' ? 'page' : undefined}>
-			<a href="/best">Best</a>
-		</li>
-		<li aria-current={page.url.pathname.startsWith('/log') ? 'page' : undefined}>
-			<a href="/scores">Scores</a>
-		</li>
-	</ul>
+	<Header />
 </nav>
 
 <main>
 	{@render children()}
 </main>
+
+<style>
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+</style>
