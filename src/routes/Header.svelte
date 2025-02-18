@@ -8,7 +8,7 @@
 		<li aria-current={page.url.pathname === '/best' ? 'page' : undefined}>
 			<a href="/best">Best</a>
 		</li>
-		<li aria-current={page.url.pathname.startsWith('/scores') ? 'page' : undefined}>
+		<li aria-current={page.url.pathname === '/report' ? 'page' : undefined}>
 			<a href="/report">Report</a>
 		</li>
 		<li aria-current={page.url.pathname === '/scores' ? 'page' : undefined}>
