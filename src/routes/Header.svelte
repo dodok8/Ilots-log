@@ -5,13 +5,13 @@
 <div class="header">
 	<h1><a href="/">ilot's Log</a></h1>
 	<ul>
-		<li aria-current={page.url.pathname === '/' ? 'page' : undefined}>
+		<li aria-current={page.url.pathname === '/best' ? 'page' : undefined}>
 			<a href="/best">Best</a>
 		</li>
 		<li aria-current={page.url.pathname.startsWith('/scores') ? 'page' : undefined}>
 			<a href="/report">Report</a>
 		</li>
-		<li aria-current={page.url.pathname === '/best' ? 'page' : undefined}>
+		<li aria-current={page.url.pathname === '/scores' ? 'page' : undefined}>
 			<a href="/scores">Scores</a>
 		</li>
 	</ul>
