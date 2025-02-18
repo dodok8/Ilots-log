@@ -64,7 +64,7 @@
 		padding: 1rem 0;
 		z-index: 99;
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-		margin: 2rem 0; /* 상하 여백 추가 */
+		margin-bottom: 2rem; /* 상하 여백 추가 */
 	}
 
 	.header {
