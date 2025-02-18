@@ -3,15 +3,15 @@
 </script>
 
 <div class="header">
-	<h1>Ilot's Log</h1>
+	<h1><a href="/">ilot's Log</a></h1>
 	<ul>
 		<li aria-current={page.url.pathname === '/' ? 'page' : undefined}>
-			<a href="/">Home</a>
-		</li>
-		<li aria-current={page.url.pathname === '/best' ? 'page' : undefined}>
 			<a href="/best">Best</a>
 		</li>
 		<li aria-current={page.url.pathname.startsWith('/scores') ? 'page' : undefined}>
+			<a href="/report">Report</a>
+		</li>
+		<li aria-current={page.url.pathname === '/best' ? 'page' : undefined}>
 			<a href="/scores">Scores</a>
 		</li>
 	</ul>
@@ -52,10 +52,11 @@
 			0 4px 12px rgba(0, 162, 255, 0.05);
 	}
 
-	h1 {
+	h1 a {
 		margin: 0;
 		font-size: 1.5rem;
 		color: #2c3e50;
+		text-decoration: none;
 	}
 
 	ul {
