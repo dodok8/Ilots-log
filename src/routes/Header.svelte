@@ -45,7 +45,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 0rem 2rem;
+		padding: 0 2rem;
 		height: 4rem;
 		background-color: #ffffff;
 		box-shadow:
@@ -53,11 +53,20 @@
 			0 4px 12px rgba(0, 162, 255, 0.05);
 	}
 
-	h1 a {
+	h1 {
 		margin: 0;
-		font-size: 1.5rem;
+		flex-shrink: 1; /* 추가: 필요시 축소 허용 */
+		min-width: 0; /* 추가: 오버플로우 방지 */
+	}
+
+	h1 a {
+		font-size: clamp(1.125rem, 4vw, 1.5rem); /* 수정: 반응형 폰트 크기 */
 		color: #2c3e50;
 		text-decoration: none;
+		white-space: nowrap; /* 추가: 줄바꿈 방지 */
+		overflow: hidden; /* 추가: 오버플로우 숨김 */
+		text-overflow: ellipsis; /* 추가: 말줄임표 표시 */
+		display: block; /* 추가: 블록 레벨 요소로 변경 */
 	}
 
 	ul {
@@ -124,5 +133,15 @@
 	.size-6 {
 		width: 24px;
 		height: 24px;
+	}
+
+	@media (max-width: 640px) {
+		.header {
+			padding: 0 1rem; /* 추가: 모바일에서 패딩 축소 */
+		}
+
+		ul {
+			gap: 1rem; /* 추가: 모바일에서 메뉴 간격 축소 */
+		}
 	}
 </style>
