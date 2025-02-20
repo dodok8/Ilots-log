@@ -98,6 +98,12 @@ class Scores {
 			this.scores = initializeScores();
 		}
 	}
+
+	load(loadedScores: Score[]) {
+		console.log('loaded!');
+		this.scores = initializeScores(loadedScores);
+		this.save();
+	}
 }
 
 const scores = new Scores();
