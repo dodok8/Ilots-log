@@ -1,21 +1,21 @@
 <script lang="ts">
-    import { scores } from '$lib/states/score.svelte';
-    import { getPotentialCharts } from '$lib/utils/best';
-    import { calculateRequiredScore } from '$lib/utils/rating';
+	import { scores } from '$lib/states/score.svelte';
+	import { getPotentialCharts } from '$lib/utils/best';
+	import { calculateRequiredScore } from '$lib/utils/rating';
 
-    let potentialCharts = $derived(
-        getPotentialCharts(scores.scores, scores.targetRating)
-            .map(chart => ({
-                ...chart,
-                requiredScore: calculateRequiredScore(chart.difficultyDecimal, scores.targetRating),
-            }))
-            .map(chart => ({
-                ...chart,
-                scoreDiff: chart.requiredScore - chart.score
-            }))
-            .filter(chart => chart.requiredScore > 0 && chart.scoreDiff > 0)
-            .sort((a, b) => a.scoreDiff - b.scoreDiff)
-    );
+	let potentialCharts = $derived(
+		getPotentialCharts(scores.scores, scores.targetRating)
+			.map((chart) => ({
+				...chart,
+				requiredScore: calculateRequiredScore(chart.difficultyDecimal, scores.targetRating)
+			}))
+			.map((chart) => ({
+				...chart,
+				scoreDiff: chart.requiredScore - chart.score
+			}))
+			.filter((chart) => chart.requiredScore > 0 && chart.scoreDiff > 0)
+			.sort((a, b) => a.scoreDiff - b.scoreDiff)
+	);
 </script>
 
 <div class="report-container">
@@ -35,23 +35,25 @@
 					<div class="chart-info" data-difficulty={chart.difficultyLevel}>
 						<h4>{chart.songTitle}</h4>
 						<div class="score-info">
-								<span>
-									[<span class={`difficulty-level ${chart.difficultyLevel}`}>{chart.difficultyLevel}</span>] 
-									{chart.difficultyDecimal}
+							<span>
+								[<span class={`difficulty-level ${chart.difficultyLevel}`}
+									>{chart.difficultyLevel}</span
+								>]
+								{chart.difficultyDecimal}
+							</span>
+							<span class="score-group">
+								<span class="score-current">
+									<span class="score-label">Current:</span>
+									<span class="score-value">{chart.score.toLocaleString()}</span>
+									<span class="rating-value">({chart.rating.toFixed(2)})</span>
 								</span>
-								<span class="score-group">
-									<span class="score-current">
-										<span class="score-label">Current:</span>
-										<span class="score-value">{chart.score.toLocaleString()}</span>
-										<span class="rating-value">({chart.rating.toFixed(2)})</span>
-									</span>
-									<span class="arrow">→</span>
-									<span class="score-required">
-										<span class="score-label">Required:</span>
-										<span class="score-value">{chart.requiredScore.toLocaleString()}</span>
-										<span class="score-diff">(+{chart.scoreDiff.toLocaleString()})</span>
-									</span>
+								<span class="arrow">→</span>
+								<span class="score-required">
+									<span class="score-label">Required:</span>
+									<span class="score-value">{chart.requiredScore.toLocaleString()}</span>
+									<span class="score-diff">(+{chart.scoreDiff.toLocaleString()})</span>
 								</span>
+							</span>
 						</div>
 					</div>
 				</li>
@@ -130,11 +132,21 @@
 	}
 
 	/* 난이도별 보더 색상 */
-	.chart-info[data-difficulty="I"] { border-left-color: #1cda1b; }
-	.chart-info[data-difficulty="II"] { border-left-color: #3b90ff; }
-	.chart-info[data-difficulty="III"] { border-left-color: #ef960d; }
-	.chart-info[data-difficulty="IV"] { border-left-color: #dc43e5; }
-	.chart-info[data-difficulty="IV-α"] { border-left-color: #bd6eff; }
+	.chart-info[data-difficulty='I'] {
+		border-left-color: #1cda1b;
+	}
+	.chart-info[data-difficulty='II'] {
+		border-left-color: #3b90ff;
+	}
+	.chart-info[data-difficulty='III'] {
+		border-left-color: #ef960d;
+	}
+	.chart-info[data-difficulty='IV'] {
+		border-left-color: #dc43e5;
+	}
+	.chart-info[data-difficulty='IV-α'] {
+		border-left-color: #bd6eff;
+	}
 
 	/* 스코어 정보 스타일링 */
 	.score-info {
@@ -151,7 +163,8 @@
 		gap: 0.75rem;
 	}
 
-	.score-current, .score-required {
+	.score-current,
+	.score-required {
 		display: flex;
 		align-items: center;
 		gap: 0.5rem;
@@ -183,11 +196,21 @@
 		font-weight: 600;
 	}
 
-	.difficulty-level.I { color: #1cda1b; }
-	.difficulty-level.II { color: #3b90ff; }
-	.difficulty-level.III { color: #ef960d; }
-	.difficulty-level.IV { color: #dc43e5; }
-	.difficulty-level.IV-α { color: #bd6eff; }
+	.difficulty-level.I {
+		color: #1cda1b;
+	}
+	.difficulty-level.II {
+		color: #3b90ff;
+	}
+	.difficulty-level.III {
+		color: #ef960d;
+	}
+	.difficulty-level.IV {
+		color: #dc43e5;
+	}
+	.difficulty-level.IV-α {
+		color: #bd6eff;
+	}
 
 	@media (max-width: 640px) {
 		.rating-info {
