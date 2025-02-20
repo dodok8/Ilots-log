@@ -7,12 +7,10 @@ const songs = songsData as Song[];
 const STORAGE_KEY = 'rotaeno-scores';
 
 // Song[] -> Score[] 변환
-const initializeScores = (songs: Song[]): Score[] => {
-	const savedScores = typeof window !== 'undefined' ? localStorage.getItem(STORAGE_KEY) : null;
-
+const initializeScores = (savedScores?: Score[]): Score[] => {
 	if (savedScores) {
 		try {
-			const parsed = JSON.parse(savedScores) as Score[];
+			const parsed = savedScores;
 
 			// If saved scores exist but have fewer songs than current data
 			if (parsed.length < songs.length) {
@@ -80,7 +78,10 @@ class Scores {
 	);
 
 	constructor() {
-		this.scores = initializeScores(songs);
+		const savedScores = localStorage.getItem(STORAGE_KEY)
+			? JSON.parse(localStorage.getItem(STORAGE_KEY) as string)
+			: undefined;
+		this.scores = initializeScores(savedScores);
 	}
 
 	save() {
@@ -94,7 +95,7 @@ class Scores {
 		if (typeof window !== 'undefined') {
 			console.log('reset!');
 			localStorage.removeItem(STORAGE_KEY);
-			this.scores = initializeScores(songs);
+			this.scores = initializeScores();
 		}
 	}
 }
