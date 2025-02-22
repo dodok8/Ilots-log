@@ -21,9 +21,23 @@ export function getBest30(scores: Score[]): ChartInfo[] {
 }
 
 export function getBest30Average(charts: ChartInfo[]): number {
-	return charts.length > 0
-		? charts.reduce((sum, chart) => sum + chart.rating, 0) / charts.length
-		: 0;
+	if (charts.length === 0) return 0;
+
+	const best10 = charts.slice(0, 10);
+	const better20 = charts.slice(10, 30);
+
+	// 충분한 곡이 없는 경우 처리
+	if (best10.length < 10) {
+		return best10.reduce((acc, chart) => acc + chart.rating, 0) / best10.length;
+	}
+
+	const best10Rating = best10.reduce((acc, chart) => acc + chart.rating, 0) / 10;
+	const better20Rating =
+		better20.length > 0
+			? better20.reduce((acc, chart) => acc + chart.rating, 0) / Math.min(better20.length, 20)
+			: 0;
+
+	return best10Rating * 0.7 + better20Rating * 0.3;
 }
 
 export function getPotentialCharts(scores: Score[], targetRating: number): ChartInfo[] {
