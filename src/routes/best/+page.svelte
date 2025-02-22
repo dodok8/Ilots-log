@@ -36,7 +36,7 @@
 	<div class="header">
 		<h1>Best 30</h1>
 		<div class="header-actions">
-			<span class="average">Average Rating: {scores.best30Average.toFixed(2)}</span>
+			<span class="average">Average Rating: {scores.best30Average.toFixed(3)}</span>
 				<button 
 					class="download-btn" 
 					on:click={downloadAsImage}

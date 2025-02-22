@@ -21,9 +21,9 @@
 <div class="report-container">
 	<div class="header">
 		<div class="rating-info">
-			<span class="rating-label">Avg: {scores.best30Average.toFixed(2)}</span>
+			<span class="rating-label">Avg: {scores.best30Average.toFixed(3)}</span>
 			<span class="separator">|</span>
-			<span class="rating-label">Target: {scores.targetRating.toFixed(2)}</span>
+			<span class="rating-label">Target: {scores.targetRating.toFixed(3)}</span>
 		</div>
 	</div>
 
@@ -45,7 +45,7 @@
 								<span class="score-current">
 									<span class="score-label">Current:</span>
 									<span class="score-value">{chart.score.toLocaleString()}</span>
-									<span class="rating-value">({chart.rating.toFixed(2)})</span>
+									<span class="rating-value">({chart.rating.toFixed(3)})</span>
 								</span>
 								<span class="arrow">→</span>
 								<span class="score-required">

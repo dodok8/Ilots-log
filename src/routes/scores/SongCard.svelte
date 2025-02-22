@@ -72,7 +72,7 @@
 						<span class={`level ${chart.difficultyLevel}`}>{chart.difficultyLevel}</span>
 						<span class={`decimal ${chart.difficultyLevel}`}>{chart.difficultyDecimal}</span>
 						<span class={`rating ${chart.difficultyLevel}`}>
-							({(chart.rating ?? 0).toFixed(2)})
+							({(chart.rating ?? 0).toFixed(3)})
 						</span>
 					</div>
 				</div>

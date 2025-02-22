@@ -67,7 +67,7 @@ class Scores {
 	best30Average = $derived(getBest30Average(this.best30Songs));
 	targetRating = $derived(
 		scores.best30Songs.length > 0
-			? scores.best30Songs[scores.best30Songs.length - 1].rating + 0.3
+			? scores.best30Songs[scores.best30Songs.length - 1].rating + 0.03
 			: 0
 	);
 

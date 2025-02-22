@@ -23,7 +23,7 @@
 		</div>
 		<div class="score-info">
 			<span class="score">{chart.score.toLocaleString()}</span>
-			<span class="rating">Rating: {chart.rating.toFixed(2)}</span>
+			<span class="rating">Rating: {chart.rating.toFixed(3)}</span>
 		</div>
 	</div>
 </div>
