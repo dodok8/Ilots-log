@@ -12,7 +12,7 @@
 		try {
 			const canvas = await html2canvas(containerRef, {
 				useCORS: true,
-                allowTaint: true,
+				allowTaint: true,
 				width: 1200,
 				scale: 2, // 고해상도를 위해
 				backgroundColor: '#ffffff',
@@ -37,11 +37,7 @@
 		<h1>Best 30</h1>
 		<div class="header-actions">
 			<span class="average">Average Rating: {scores.best30Average.toFixed(3)}</span>
-				<button 
-					class="download-btn" 
-					on:click={downloadAsImage}
-					bind:this={downloadBtn}
-				>
+			<button class="download-btn" on:click={downloadAsImage} bind:this={downloadBtn}>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"

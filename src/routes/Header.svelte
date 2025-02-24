@@ -15,11 +15,7 @@
 			<a href="/scores">Scores</a>
 		</li>
 	</ul>
-	<a
-		href="/backup"
-		class="cloud-btn"
-		aria-label="cloud save button"
-	>
+	<a href="/backup" class="cloud-btn" aria-label="cloud save button">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			fill="none"

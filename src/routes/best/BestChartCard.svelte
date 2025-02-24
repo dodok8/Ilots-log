@@ -8,12 +8,12 @@
 <div class="chart-card" data-difficulty={chart.difficultyLevel}>
 	<div class="rank">#{rank}</div>
 	<div class="image-container">
-			<img 
-			    src={`https://images.weserv.nl/?url=wiki.rotaeno.cn/${chart.imageUrl}`}
-			    alt={chart.songTitle}
-			    loading="lazy"
-			    crossorigin="anonymous"
-			/>
+		<img
+			src={`https://images.weserv.nl/?url=wiki.rotaeno.cn/${chart.imageUrl}`}
+			alt={chart.songTitle}
+			loading="lazy"
+			crossorigin="anonymous"
+		/>
 	</div>
 	<div class="chart-info">
 		<h3 class="song-title">{chart.songTitle}</h3>
