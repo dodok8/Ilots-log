@@ -84,6 +84,10 @@
 	<div class="card">
 		<div class="card-header">
 			<h2>Cloud Backup</h2>
+			<p class="tos-notice">
+				By using this feature, you agree that this application will create and access a file in your
+				Google Drive. The file will be used exclusively for backing up your score data.
+			</p>
 			{#if isGoogleApiLoading}
 				<p class="loading">Initializing Google Drive integration...</p>
 			{:else if !isCloudBackupEnabled}
@@ -207,12 +211,6 @@
 		color: #1a1a1a;
 	}
 
-	.coming-soon {
-		color: #64748b;
-		font-size: 0.875rem;
-		margin: 0.5rem 0;
-	}
-
 	.cloud-buttons,
 	.local-buttons {
 		display: flex;
@@ -276,6 +274,17 @@
 		color: #dc2626;
 		font-size: 0.875rem;
 		margin: 0.5rem 0;
+	}
+
+	.tos-notice {
+		color: #64748b;
+		font-size: 0.875rem;
+		margin: 0.5rem 0 1rem;
+		line-height: 1.4;
+		background: #f1f5f9;
+		padding: 0.75rem;
+		border-radius: 0.5rem;
+		border-left: 4px solid #2563eb;
 	}
 
 	@media (max-width: 640px) {
