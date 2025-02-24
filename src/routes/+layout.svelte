@@ -4,6 +4,17 @@
 	import 'normalize.css';
 	import '../app.css';
 	import Header from './Header.svelte';
+	import { onMount } from 'svelte';
+	import { DriveService } from '$lib/services/drive';
+
+	onMount(async () => {
+		try {
+			const driveService = DriveService.getInstance();
+			await driveService.initialize();
+		} catch (error) {
+			console.error('Failed to initialize Drive service:', error);
+		}
+	});
 </script>
 
 <nav>
