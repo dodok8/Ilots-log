@@ -115,36 +115,57 @@ export class DriveService {
 	}
 
 	async uploadBackup(content: string): Promise<void> {
-		if (!this.backupFolderId) {
-			await this.initializeBackup();
-		}
+		try {
+			if (!this.backupFolderId) {
+				await this.initializeBackup();
+			}
 
-		const metadata = {
-			name: DriveService.BACKUP_FILE_NAME,
-			parents: this.backupFileId ? undefined : [this.backupFolderId!]
-		};
+			// Create form data for multipart upload
+			const metadata = new Blob(
+				[
+					JSON.stringify({
+						name: DriveService.BACKUP_FILE_NAME,
+						mimeType: 'application/json',
+						parents: this.backupFileId ? undefined : [this.backupFolderId!]
+					})
+				],
+				{ type: 'application/json' }
+			);
 
-		if (this.backupFileId) {
-			// Update existing file
-			await gapi.client.drive.files.update({
-				fileId: this.backupFileId,
-				resource: metadata,
-				media: {
-					mimeType: 'application/json',
-					body: content
-				}
-			});
-		} else {
-			// Create new file
-			const response = await gapi.client.drive.files.create({
-				resource: metadata,
-				media: {
-					mimeType: 'application/json',
-					body: content
+			const contentBlob = new Blob([content], { type: 'application/json' });
+
+			const form = new FormData();
+			form.append('metadata', metadata);
+			form.append('file', contentBlob);
+
+			// Use fetch API for multipart upload
+			const accessToken = gapi.auth.getToken().access_token;
+			const url = this.backupFileId
+				? `https://www.googleapis.com/upload/drive/v3/files/${this.backupFileId}?uploadType=multipart`
+				: 'https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart';
+
+			const response = await fetch(url, {
+				method: this.backupFileId ? 'PATCH' : 'POST',
+				headers: {
+					Authorization: `Bearer ${accessToken}`
 				},
-				fields: 'id'
+				body: form
 			});
-			this.backupFileId = response.result.id;
+
+			if (!response.ok) {
+				const errorData = await response.json();
+				throw new Error(`Drive API error: ${errorData.error.message}`);
+			}
+
+			const result = await response.json();
+			console.log('File operation successful:', result);
+
+			if (!this.backupFileId) {
+				this.backupFileId = result.id;
+			}
+		} catch (error) {
+			console.error('Upload failed:', error);
+			throw error;
 		}
 	}
 
@@ -159,5 +180,22 @@ export class DriveService {
 		});
 
 		return response.body;
+	}
+
+	async eraseBackup(): Promise<void> {
+		if (!this.backupFileId) {
+			throw new Error('No backup file found');
+		}
+
+		try {
+			await gapi.client.drive.files.delete({
+				fileId: this.backupFileId
+			});
+			this.backupFileId = null;
+			console.log('File deleted successfully');
+		} catch (error) {
+			console.error('Failed to delete file:', error);
+			throw error;
+		}
 	}
 }
