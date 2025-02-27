@@ -1,21 +1,13 @@
 <script lang="ts">
 	import { scores } from '$lib/states/score.svelte';
-	import { DriveService } from '$lib/services/drive';
-	import { onMount } from 'svelte';
+	import { driveService } from './drive.svelte';
 
-	let driveService: DriveService;
-	let isGoogleApiLoading = true;
-	let isCloudBackupEnabled = false;
+	let ready = $state([false, false]);
 
-	onMount(() => {
-		try {
-			// 이미 초기화된 인스턴스만 가져오기
-			driveService = DriveService.getInstance();
-			isGoogleApiLoading = false;
-			isCloudBackupEnabled = true;
-		} catch (error) {
-			console.error('Failed to get Drive service:', error);
-			isGoogleApiLoading = false;
+	$effect(() => {
+		if (ready[0] && ready[1]) {
+			console.log("hi")
+			driveService.initialize();
 		}
 	});
 
@@ -56,10 +48,10 @@
 	// Cloud backup functions
 	async function uploadToCloud() {
 		try {
-			await driveService.requestAuth();
-			await driveService.initializeBackup(); // 명시적으로 폴더 초기화
+			await driveService?.requestAuth();
+			await driveService?.initializeBackup(); // 명시적으로 폴더 초기화
 			const jsonString = JSON.stringify(scores.scores, null, 2);
-			await driveService.uploadBackup(jsonString);
+			await driveService?.uploadBackup(jsonString);
 			alert('Successfully uploaded to Google Drive!');
 		} catch (error) {
 			console.error('Failed to upload:', error);
@@ -69,9 +61,9 @@
 
 	async function downloadFromCloud() {
 		try {
-			await driveService.requestAuth();
-			const jsonString = await driveService.downloadBackup();
-			const jsonData = JSON.parse(jsonString);
+			await driveService?.requestAuth();
+			const jsonString = await driveService?.downloadBackup();
+			const jsonData = JSON.parse(jsonString || '');
 			scores.load(jsonData);
 			alert('Successfully loaded from Google Drive!');
 		} catch (error) {
@@ -88,8 +80,8 @@
 		}
 
 		try {
-			await driveService.requestAuth();
-			await driveService.eraseBackup();
+			await driveService?.requestAuth();
+			await driveService?.eraseBackup();
 			alert('Successfully deleted backup from Google Drive!');
 		} catch (error) {
 			console.error('Failed to delete:', error);
@@ -97,6 +89,21 @@
 		}
 	}
 </script>
+
+<svelte:head>
+	<script
+		src="https://apis.google.com/js/api.js"
+		onload={() => {
+			ready[0] = true;
+		}}
+	></script>
+	<script
+		src="https://accounts.google.com/gsi/client"
+		onload={() => {
+			ready[1] = true;
+		}}
+	></script>
+</svelte:head>
 
 <div class="backup-container">
 	<div class="card">
@@ -106,13 +113,11 @@
 				By using this feature, you agree that this application will create and access a file in your
 				Google Drive. The file will be used exclusively for backing up your score data.
 			</p>
-			{#if isGoogleApiLoading}
+			{#if !driveService.isInitialized}
 				<p class="loading">Initializing Google Drive integration...</p>
-			{:else if !isCloudBackupEnabled}
-				<p class="error">Failed to initialize Google Drive integration</p>
 			{:else}
 				<div class="cloud-buttons">
-					<button class="cloud-btn" on:click={uploadToCloud}>
+					<button class="cloud-btn" onclick={uploadToCloud}>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
@@ -129,7 +134,7 @@
 						</svg>
 						Upload to Cloud
 					</button>
-					<button class="cloud-btn" on:click={downloadFromCloud}>
+					<button class="cloud-btn" onclick={downloadFromCloud}>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
@@ -146,7 +151,7 @@
 						</svg>
 						Download from Cloud
 					</button>
-					<button class="cloud-btn delete" on:click={eraseFromCloud}>
+					<button class="cloud-btn delete" onclick={eraseFromCloud}>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
@@ -172,7 +177,7 @@
 		<div class="card-content">
 			<h2>Local Backup</h2>
 			<div class="local-buttons">
-				<button class="local-btn" on:click={downloadScoresAsJson}>
+				<button class="local-btn" onclick={downloadScoresAsJson}>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
@@ -205,7 +210,7 @@
 						/>
 					</svg>
 					Load Backup File
-					<input type="file" accept=".json" on:change={handleFileSelect} />
+					<input type="file" accept=".json" onchange={handleFileSelect} />
 				</label>
 			</div>
 		</div>
@@ -301,12 +306,6 @@
 
 	.loading {
 		color: #64748b;
-		font-size: 0.875rem;
-		margin: 0.5rem 0;
-	}
-
-	.error {
-		color: #dc2626;
 		font-size: 0.875rem;
 		margin: 0.5rem 0;
 	}
