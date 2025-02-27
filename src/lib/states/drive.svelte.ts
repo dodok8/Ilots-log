@@ -1,32 +1,20 @@
 import { browser } from '$app/environment';
 
-export class DriveService {
-	private static instance: DriveService;
-	private isInitialized = false;
-	private tokenClient: google.accounts.oauth2.TokenClient | null = null;
-	private static readonly BACKUP_FILE_NAME = 'rotaeno_scores_backup.json';
-	private static readonly BACKUP_FOLDER_NAME = 'IlotsLog';
-	private backupFileId: string | null = null;
-	private backupFolderId: string | null = null;
+const BACKUP_FILE_NAME = 'rotaeno_scores_backup.json' as const;
+const BACKUP_FOLDER_NAME = 'IlotsLog' as const;
 
-	private constructor() {}
+class DriveService {
+	isInitialized = $state(false);
+	private tokenClient: google.accounts.oauth2.TokenClient | null = $state(null);
+	private backupFileId: string | null = $state(null);
+	private backupFolderId: string | null = $state(null);
 
-	static getInstance(): DriveService {
-		if (!DriveService.instance) {
-			DriveService.instance = new DriveService();
-		}
-		return DriveService.instance;
-	}
+	constructor() {}
 
 	async initialize() {
-		if (!browser || this.isInitialized) return;
+		if (!browser || this.isInitialized === true) return;
 
 		try {
-			// Load Google API
-			await this.loadScript('https://apis.google.com/js/api.js');
-			// Load Google Identity Services
-			await this.loadScript('https://accounts.google.com/gsi/client');
-
 			// Initialize GAPI client
 			await new Promise<void>((resolve) => {
 				gapi.load('client', resolve);
@@ -71,7 +59,7 @@ export class DriveService {
 
 	async initializeBackup(): Promise<void> {
 		// Find or create backup folder
-		const folderQuery = `name='${DriveService.BACKUP_FOLDER_NAME}' and mimeType='application/vnd.google-apps.folder'`;
+		const folderQuery = `name='${BACKUP_FOLDER_NAME}' and mimeType='application/vnd.google-apps.folder'`;
 		const folderResponse = await gapi.client.drive.files.list({
 			q: folderQuery,
 			spaces: 'drive'
@@ -79,7 +67,7 @@ export class DriveService {
 
 		if (folderResponse.result.files.length === 0) {
 			const folderMetadata = {
-				name: DriveService.BACKUP_FOLDER_NAME,
+				name: BACKUP_FOLDER_NAME,
 				mimeType: 'application/vnd.google-apps.folder'
 			};
 			const folder = await gapi.client.drive.files.create({
@@ -92,7 +80,7 @@ export class DriveService {
 
 		// Find existing backup file
 		if (this.backupFolderId) {
-			const fileQuery = `name='${DriveService.BACKUP_FILE_NAME}' and '${this.backupFolderId}' in parents`;
+			const fileQuery = `name='${BACKUP_FILE_NAME}' and '${this.backupFolderId}' in parents`;
 			const fileResponse = await gapi.client.drive.files.list({
 				q: fileQuery,
 				spaces: 'drive'
@@ -102,16 +90,6 @@ export class DriveService {
 				this.backupFileId = fileResponse.result.files[0].id;
 			}
 		}
-	}
-
-	private loadScript(src: string): Promise<void> {
-		return new Promise((resolve, reject) => {
-			const script = document.createElement('script');
-			script.src = src;
-			script.onload = () => resolve();
-			script.onerror = () => reject(new Error(`Failed to load script: ${src}`));
-			document.head.appendChild(script);
-		});
 	}
 
 	async uploadBackup(content: string): Promise<void> {
@@ -124,7 +102,7 @@ export class DriveService {
 			const metadata = new Blob(
 				[
 					JSON.stringify({
-						name: DriveService.BACKUP_FILE_NAME,
+						name: BACKUP_FILE_NAME,
 						mimeType: 'application/json',
 						parents: this.backupFileId ? undefined : [this.backupFolderId!]
 					})
@@ -139,6 +117,7 @@ export class DriveService {
 			form.append('file', contentBlob);
 
 			// Use fetch API for multipart upload
+			//@ts-expect-error : idk
 			const accessToken = gapi.auth.getToken().access_token;
 			const url = this.backupFileId
 				? `https://www.googleapis.com/upload/drive/v3/files/${this.backupFileId}?uploadType=multipart`
@@ -188,6 +167,7 @@ export class DriveService {
 		}
 
 		try {
+			//@ts-expect-error : idk
 			await gapi.client.drive.files.delete({
 				fileId: this.backupFileId
 			});
@@ -199,3 +179,7 @@ export class DriveService {
 		}
 	}
 }
+
+const driveService = new DriveService();
+
+export { driveService };
