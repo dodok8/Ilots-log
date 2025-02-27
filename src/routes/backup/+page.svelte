@@ -1,21 +1,13 @@
 <script lang="ts">
 	import { scores } from '$lib/states/score.svelte';
-	import { DriveService } from '$lib/services/drive';
-	import { onMount } from 'svelte';
+	import { driveService } from './drive.svelte';
 
-	let driveService: DriveService;
-	let isGoogleApiLoading = true;
-	let isCloudBackupEnabled = false;
+	let ready = $state([false, false]);
 
-	onMount(async () => {
-		try {
-			driveService = DriveService.getInstance();
-			await driveService.initialize();
-			isGoogleApiLoading = false;
-			isCloudBackupEnabled = true;
-		} catch (error) {
-			console.error('Failed to initialize Drive service:', error);
-			isGoogleApiLoading = false;
+	$effect(() => {
+		if (ready[0] && ready[1]) {
+			console.log("hi")
+			driveService.initialize();
 		}
 	});
 
@@ -56,10 +48,10 @@
 	// Cloud backup functions
 	async function uploadToCloud() {
 		try {
-			await driveService.requestAuth();
-			await driveService.initializeBackup(); // 명시적으로 폴더 초기화
+			await driveService?.requestAuth();
+			await driveService?.initializeBackup(); // 명시적으로 폴더 초기화
 			const jsonString = JSON.stringify(scores.scores, null, 2);
-			await driveService.uploadBackup(jsonString);
+			await driveService?.uploadBackup(jsonString);
 			alert('Successfully uploaded to Google Drive!');
 		} catch (error) {
 			console.error('Failed to upload:', error);
@@ -69,9 +61,9 @@
 
 	async function downloadFromCloud() {
 		try {
-			await driveService.requestAuth();
-			const jsonString = await driveService.downloadBackup();
-			const jsonData = JSON.parse(jsonString);
+			await driveService?.requestAuth();
+			const jsonString = await driveService?.downloadBackup();
+			const jsonData = JSON.parse(jsonString || '');
 			scores.load(jsonData);
 			alert('Successfully loaded from Google Drive!');
 		} catch (error) {
@@ -80,21 +72,38 @@
 		}
 	}
 
-    async function eraseFromCloud() {
-        if (!confirm('Are you sure you want to delete your cloud backup? This action cannot be undone.')) {
-            return;
-        }
+	async function eraseFromCloud() {
+		if (
+			!confirm('Are you sure you want to delete your cloud backup? This action cannot be undone.')
+		) {
+			return;
+		}
 
-        try {
-            await driveService.requestAuth();
-            await driveService.eraseBackup();
-            alert('Successfully deleted backup from Google Drive!');
-        } catch (error) {
-            console.error('Failed to delete:', error);
-            alert('Failed to delete from Google Drive: ' + (error as Error).message);
-        }
-    }
+		try {
+			await driveService?.requestAuth();
+			await driveService?.eraseBackup();
+			alert('Successfully deleted backup from Google Drive!');
+		} catch (error) {
+			console.error('Failed to delete:', error);
+			alert('Failed to delete from Google Drive: ' + (error as Error).message);
+		}
+	}
 </script>
+
+<svelte:head>
+	<script
+		src="https://apis.google.com/js/api.js"
+		onload={() => {
+			ready[0] = true;
+		}}
+	></script>
+	<script
+		src="https://accounts.google.com/gsi/client"
+		onload={() => {
+			ready[1] = true;
+		}}
+	></script>
+</svelte:head>
 
 <div class="backup-container">
 	<div class="card">
@@ -104,13 +113,11 @@
 				By using this feature, you agree that this application will create and access a file in your
 				Google Drive. The file will be used exclusively for backing up your score data.
 			</p>
-			{#if isGoogleApiLoading}
+			{#if !driveService.isInitialized}
 				<p class="loading">Initializing Google Drive integration...</p>
-			{:else if !isCloudBackupEnabled}
-				<p class="error">Failed to initialize Google Drive integration</p>
 			{:else}
 				<div class="cloud-buttons">
-					<button class="cloud-btn" on:click={uploadToCloud}>
+					<button class="cloud-btn" onclick={uploadToCloud}>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
@@ -127,7 +134,7 @@
 						</svg>
 						Upload to Cloud
 					</button>
-					<button class="cloud-btn" on:click={downloadFromCloud}>
+					<button class="cloud-btn" onclick={downloadFromCloud}>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
@@ -144,12 +151,23 @@
 						</svg>
 						Download from Cloud
 					</button>
-                    <button class="cloud-btn delete" on:click={eraseFromCloud}>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
-                        </svg>
-                        Erase from Cloud
-                    </button>
+					<button class="cloud-btn delete" onclick={eraseFromCloud}>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="icon"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
+							/>
+						</svg>
+						Erase from Cloud
+					</button>
 				</div>
 			{/if}
 		</div>
@@ -159,7 +177,7 @@
 		<div class="card-content">
 			<h2>Local Backup</h2>
 			<div class="local-buttons">
-				<button class="local-btn" on:click={downloadScoresAsJson}>
+				<button class="local-btn" onclick={downloadScoresAsJson}>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
@@ -192,7 +210,7 @@
 						/>
 					</svg>
 					Load Backup File
-					<input type="file" accept=".json" on:change={handleFileSelect} />
+					<input type="file" accept=".json" onchange={handleFileSelect} />
 				</label>
 			</div>
 		</div>
@@ -292,12 +310,6 @@
 		margin: 0.5rem 0;
 	}
 
-	.error {
-		color: #dc2626;
-		font-size: 0.875rem;
-		margin: 0.5rem 0;
-	}
-
 	.tos-notice {
 		color: #64748b;
 		font-size: 0.875rem;
@@ -309,13 +321,13 @@
 		border-left: 4px solid #2563eb;
 	}
 
-    .cloud-btn.delete {
-        background-color: #dc2626;
-    }
+	.cloud-btn.delete {
+		background-color: #dc2626;
+	}
 
-    .cloud-btn.delete:hover {
-        background-color: #b91c1c;
-    }
+	.cloud-btn.delete:hover {
+		background-color: #b91c1c;
+	}
 
 	@media (max-width: 640px) {
 		.cloud-buttons,
