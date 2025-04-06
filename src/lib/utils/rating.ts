@@ -18,7 +18,7 @@ export function calculateSongRating(difficulty: number, score: number): number {
 	} else if (score < 1010000) {
 		rating = difficulty + 3.4 + (score - 1008000) / 10000;
 	} else {
-		rating = difficulty + 3.4 + (1010000 - 1008000) / 10000;
+		rating = difficulty + 3.7;
 	}
 
 	// If the player fails, ensure the rating doesn't exceed 6.0
@@ -34,8 +34,8 @@ export function calculateSongRating(difficulty: number, score: number): number {
 }
 
 export function calculateRequiredScore(difficulty: number, targetRating: number): number {
-	// 목표 레이팅이 난이도+3.6보다 높으면 달성 불가능
-	if (targetRating > difficulty + 3.6) {
+	// 목표 레이팅이 난이도+3.7보다 높으면 달성 불가능
+	if (targetRating > difficulty + 3.7) {
 		return -1; // 불가능한 목표
 	}
 
@@ -64,9 +64,12 @@ export function calculateRequiredScore(difficulty: number, targetRating: number)
 	} else if (targetRating <= difficulty + 3.4) {
 		// 1004000-1008000점 구간
 		requiredScore = 1004000 + (targetRating - (difficulty + 2.4)) * 4000;
-	} else {
+	} else if (targetRating < difficulty + 3.6) {
 		// 1008000-1010000점 구간
 		requiredScore = 1008000 + (targetRating - (difficulty + 3.4)) * 10000;
+	} else {
+		// 1010000점(이론치)
+		requiredScore = 1010000;
 	}
 
 	// 점수를 정수로 반올림
