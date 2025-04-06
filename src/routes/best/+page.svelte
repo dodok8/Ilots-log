@@ -23,7 +23,7 @@
 			});
 
 			const link = document.createElement('a');
-			link.download = `best30_${new Date().toISOString().split('T')[0]}.png`;
+			link.download = `best40_${new Date().toISOString().split('T')[0]}.png`;
 			link.href = canvas.toDataURL('image/png');
 			link.click();
 		} catch (error) {
@@ -32,11 +32,11 @@
 	}
 </script>
 
-<div class="best30-container" bind:this={containerRef}>
+<div class="best40-container" bind:this={containerRef}>
 	<div class="header">
-		<h1>Best 30</h1>
+		<h1>Best 40</h1>
 		<div class="header-actions">
-			<span class="average">Average Rating: {scores.best30Average.toFixed(3)}</span>
+			<span class="average">Average Rating: {scores.best40Average.toFixed(3)}</span>
 			<button class="download-btn" on:click={downloadAsImage} bind:this={downloadBtn}>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -58,14 +58,14 @@
 	</div>
 
 	<div class="charts-grid">
-		{#each scores.best30Songs as chart, index}
+		{#each scores.best40Songs as chart, index}
 			<BestChartCard {chart} rank={index + 1} />
 		{/each}
 	</div>
 </div>
 
 <style>
-	.best30-container {
+	.best40-container {
 		max-width: 1200px;
 		margin: 0 auto;
 		padding: 2rem;

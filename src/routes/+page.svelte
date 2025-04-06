@@ -16,7 +16,7 @@
 		<div class="feature-grid">
 			<a href="/best" class="feature-card">
 				<h3>/best</h3>
-				<p>View and track your top 30 ratings with detailed performance statistics.</p>
+				<p>View and track your top 40 ratings with detailed performance statistics.</p>
 			</a>
 			<a href="/report" class="feature-card">
 				<h3>/report</h3>

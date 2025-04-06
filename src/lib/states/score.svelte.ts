@@ -1,4 +1,4 @@
-import { getBest30, getBest30Average } from '$lib/utils/best';
+import { getBest40, getBest40Average } from '$lib/utils/best';
 import type { Song } from '$lib/types/song';
 import type { Score } from '$lib/types/score';
 import songsData from '$lib/data/songs.json';
@@ -63,11 +63,11 @@ const createInitialScores = (): Score[] => songs.map(createEmptyScore);
 
 class Scores {
 	scores: Score[] = $state([]);
-	best30Songs = $derived(getBest30(this.scores));
-	best30Average = $derived(getBest30Average(this.best30Songs));
+	best40Songs = $derived(getBest40(this.scores));
+	best40Average = $derived(getBest40Average(this.best40Songs));
 	targetRating = $derived(
-		scores.best30Songs.length > 0
-			? scores.best30Songs[scores.best30Songs.length - 1].rating + 0.03
+		scores.best40Songs.length > 0
+			? scores.best40Songs[scores.best40Songs.length - 1].rating + 0.04
 			: 0
 	);
 

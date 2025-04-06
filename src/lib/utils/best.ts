@@ -1,7 +1,7 @@
 import type { ChartInfo } from '$lib/types/chart';
 import type { Score } from '$lib/types/score';
 
-export function getBest30(scores: Score[]): ChartInfo[] {
+export function getBest40(scores: Score[]): ChartInfo[] {
 	return scores
 		.flatMap((song): ChartInfo[] =>
 			song.charts
@@ -17,10 +17,10 @@ export function getBest30(scores: Score[]): ChartInfo[] {
 				}))
 		)
 		.sort((a, b) => b.rating - a.rating)
-		.slice(0, 30);
+		.slice(0, 40);
 }
 
-export function getBest30Average(charts: ChartInfo[]): number {
+export function getBest40Average(charts: ChartInfo[]): number {
 	if (charts.length === 0) return 0;
 
 	const best10 = charts.slice(0, 10);
