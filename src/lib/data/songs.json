@@ -1777,25 +1777,25 @@
       {
         "difficultyLevel": "I",
         "difficultyDecimal": 2,
-        "chartDesigner": "闇靈",
+        "chartDesigner": "闇靈DarkM",
         "jacketDesigner": "Chih Chi Chang"
       },
       {
         "difficultyLevel": "II",
         "difficultyDecimal": 4,
-        "chartDesigner": "闇靈",
+        "chartDesigner": "闇靈DarkM",
         "jacketDesigner": "Chih Chi Chang"
       },
       {
         "difficultyLevel": "III",
         "difficultyDecimal": 9.3,
-        "chartDesigner": "闇靈",
+        "chartDesigner": "闇靈DarkM",
         "jacketDesigner": "Chih Chi Chang"
       },
       {
         "difficultyLevel": "IV",
         "difficultyDecimal": 11.8,
-        "chartDesigner": "闇靈",
+        "chartDesigner": "闇靈DarkM",
         "jacketDesigner": "Chih Chi Chang"
       }
     ]
@@ -3797,7 +3797,7 @@
   {
     "id": "snapdragon",
     "imageUrl": "/images/thumb/5/5f/Songs_snapdragon.png/256px-Songs_snapdragon.png",
-    "artist": "NeLiMe",
+    "artist": "NeLiME",
     "releaseVersion": "1.8.0",
     "chapter": "轨迹：梦想萌芽的那一天",
     "title_localized": {
@@ -10244,6 +10244,299 @@
         "difficultyDecimal": 13.6,
         "chartDesigner": "qot",
         "jacketDesigner": "Derder"
+      }
+    ]
+  },
+  {
+    "id": "laboratory-018",
+    "imageUrl": "/images/thumb/1/1f/Songs_laboratory-018.png/256px-Songs_laboratory-018.png",
+    "artist": "Riya",
+    "releaseVersion": "2.8.0",
+    "chapter": "基础歌曲",
+    "title_localized": {
+      "default": "Laboratory-018"
+    },
+    "source_localized": {
+      "default": "Original"
+    },
+    "charts": [
+      {
+        "difficultyLevel": "I",
+        "difficultyDecimal": 2,
+        "chartDesigner": "Mr.Jakasy & Dr.Joker",
+        "jacketDesigner": "Issen"
+      },
+      {
+        "difficultyLevel": "II",
+        "difficultyDecimal": 5,
+        "chartDesigner": "Mr.Jakasy & Dr.Joker",
+        "jacketDesigner": "Issen"
+      },
+      {
+        "difficultyLevel": "III",
+        "difficultyDecimal": 9.2,
+        "chartDesigner": "Mr.Jakasy & Dr.Joker",
+        "jacketDesigner": "Issen"
+      },
+      {
+        "difficultyLevel": "IV",
+        "difficultyDecimal": 12.2,
+        "chartDesigner": "Mr.Jakasy & Dr.Joker",
+        "jacketDesigner": "Issen"
+      }
+    ]
+  },
+  {
+    "id": "aleph-0",
+    "imageUrl": "/images/thumb/a/a4/Songs_aleph-0.png/256px-Songs_aleph-0.png",
+    "artist": "Leaf",
+    "releaseVersion": "2.8.0",
+    "chapter": "Ψ：脑波过载",
+    "title_localized": {
+      "default": "Aleph-0"
+    },
+    "source_localized": {
+      "default": "BOFU2015"
+    },
+    "charts": [
+      {
+        "difficultyLevel": "I",
+        "difficultyDecimal": 3,
+        "chartDesigner": "TangScend",
+        "jacketDesigner": "Optie"
+      },
+      {
+        "difficultyLevel": "II",
+        "difficultyDecimal": 6,
+        "chartDesigner": "TangScend",
+        "jacketDesigner": "Optie"
+      },
+      {
+        "difficultyLevel": "III",
+        "difficultyDecimal": 11.4,
+        "chartDesigner": "TangScend",
+        "jacketDesigner": "Optie"
+      },
+      {
+        "difficultyLevel": "IV",
+        "difficultyDecimal": 12.4,
+        "chartDesigner": "尾号",
+        "jacketDesigner": "Optie"
+      },
+      {
+        "difficultyLevel": "IV-α",
+        "difficultyDecimal": 13.5,
+        "chartDesigner": "Adashi \"Dextroy your eyes\"",
+        "jacketDesigner": "Optie"
+      }
+    ]
+  },
+  {
+    "id": "brain-power",
+    "imageUrl": "/images/thumb/a/a1/Songs_brain-power.png/256px-Songs_brain-power.png",
+    "artist": "NOMA",
+    "releaseVersion": "2.8.0",
+    "chapter": "Ψ：脑波过载",
+    "title_localized": {
+      "default": "Brain Power"
+    },
+    "source_localized": {
+      "default": "Original"
+    },
+    "charts": [
+      {
+        "difficultyLevel": "I",
+        "difficultyDecimal": 3,
+        "chartDesigner": "j!ang",
+        "jacketDesigner": "Axle"
+      },
+      {
+        "difficultyLevel": "II",
+        "difficultyDecimal": 8.4,
+        "chartDesigner": "j!ang",
+        "jacketDesigner": "Axle"
+      },
+      {
+        "difficultyLevel": "III",
+        "difficultyDecimal": 11.2,
+        "chartDesigner": "j!ang",
+        "jacketDesigner": "Axle"
+      },
+      {
+        "difficultyLevel": "IV",
+        "difficultyDecimal": 13.1,
+        "chartDesigner": "j!ang",
+        "jacketDesigner": "Axle"
+      }
+    ]
+  },
+  {
+    "id": "muen",
+    "imageUrl": "/images/thumb/4/42/Songs_muen.png/256px-Songs_muen.png",
+    "artist": "大前司",
+    "releaseVersion": "2.8.0",
+    "chapter": "Ψ：脑波过载",
+    "title_localized": {
+      "default": "夢厭 con eleganza",
+      "en": "Muen con eleganza"
+    },
+    "source_localized": {
+      "default": "Original"
+    },
+    "charts": [
+      {
+        "difficultyLevel": "I",
+        "difficultyDecimal": 3,
+        "chartDesigner": "尾号",
+        "jacketDesigner": "KeiuO as GAQLLA"
+      },
+      {
+        "difficultyLevel": "II",
+        "difficultyDecimal": 6,
+        "chartDesigner": "尾号",
+        "jacketDesigner": "KeiuO as GAQLLA"
+      },
+      {
+        "difficultyLevel": "III",
+        "difficultyDecimal": 9.6,
+        "chartDesigner": "尾号",
+        "jacketDesigner": "KeiuO as GAQLLA"
+      },
+      {
+        "difficultyLevel": "IV",
+        "difficultyDecimal": 13,
+        "chartDesigner": "尾号",
+        "jacketDesigner": "KeiuO as GAQLLA"
+      }
+    ]
+  },
+  {
+    "id": "stage-5",
+    "imageUrl": "/images/thumb/3/36/Songs_stage-5.png/256px-Songs_stage-5.png",
+    "artist": "LV.4",
+    "releaseVersion": "2.8.0",
+    "chapter": "Ψ：脑波过载",
+    "title_localized": {
+      "default": "Stage 5"
+    },
+    "source_localized": {
+      "default": "Original"
+    },
+    "charts": [
+      {
+        "difficultyLevel": "I",
+        "difficultyDecimal": 2,
+        "chartDesigner": "lino",
+        "jacketDesigner": "LV.4"
+      },
+      {
+        "difficultyLevel": "II",
+        "difficultyDecimal": 5,
+        "chartDesigner": "lino",
+        "jacketDesigner": "LV.4"
+      },
+      {
+        "difficultyLevel": "III",
+        "difficultyDecimal": 8.6,
+        "chartDesigner": "lino",
+        "jacketDesigner": "LV.4"
+      },
+      {
+        "difficultyLevel": "IV",
+        "difficultyDecimal": 12.9,
+        "chartDesigner": "Adashi \"Dextroy your thumbs\"",
+        "jacketDesigner": "LV.4"
+      },
+      {
+        "difficultyLevel": "IV-α",
+        "difficultyDecimal": 13.9,
+        "chartDesigner": "Adashi \"Dextroy your wrists\"",
+        "jacketDesigner": "LV.4"
+      }
+    ]
+  },
+  {
+    "id": "take",
+    "imageUrl": "/images/thumb/d/d8/Songs_take.png/256px-Songs_take.png",
+    "artist": "立秋 feat.ちょこ",
+    "releaseVersion": "2.8.0",
+    "chapter": "Ψ：脑波过载",
+    "title_localized": {
+      "default": "竹",
+      "en": "Bamboo"
+    },
+    "source_localized": {
+      "default": "BOFXVI"
+    },
+    "charts": [
+      {
+        "difficultyLevel": "I",
+        "difficultyDecimal": 2,
+        "chartDesigner": "闇靈DarkM",
+        "jacketDesigner": "石王マサト"
+      },
+      {
+        "difficultyLevel": "II",
+        "difficultyDecimal": 8,
+        "chartDesigner": "闇靈DarkM",
+        "jacketDesigner": "石王マサト"
+      },
+      {
+        "difficultyLevel": "III",
+        "difficultyDecimal": 10.3,
+        "chartDesigner": "闇靈DarkM",
+        "jacketDesigner": "石王マサト"
+      },
+      {
+        "difficultyLevel": "IV",
+        "difficultyDecimal": 13.7,
+        "chartDesigner": "Adashi \"Dextroy your mind\"",
+        "jacketDesigner": "石王マサト"
+      }
+    ]
+  },
+  {
+    "id": "dextroy",
+    "imageUrl": "/images/thumb/7/7f/Songs_dextroy.png/256px-Songs_dextroy.png",
+    "artist": "MonstDeath",
+    "releaseVersion": "2.8.0",
+    "chapter": "Ψ：脑波过载",
+    "title_localized": {
+      "default": "Dextroy"
+    },
+    "source_localized": {
+      "default": "Rotaeno Sound Collection"
+    },
+    "charts": [
+      {
+        "difficultyLevel": "I",
+        "difficultyDecimal": 4,
+        "chartDesigner": "AxEradaS",
+        "jacketDesigner": "Saclia"
+      },
+      {
+        "difficultyLevel": "II",
+        "difficultyDecimal": 7.5,
+        "chartDesigner": "AxEradaS",
+        "jacketDesigner": "Saclia"
+      },
+      {
+        "difficultyLevel": "III",
+        "difficultyDecimal": 12.3,
+        "chartDesigner": "AxEradaS",
+        "jacketDesigner": "Saclia"
+      },
+      {
+        "difficultyLevel": "IV",
+        "difficultyDecimal": 13.2,
+        "chartDesigner": "植物 DEXTROY By Adashi",
+        "jacketDesigner": "Saclia"
+      },
+      {
+        "difficultyLevel": "IV-α",
+        "difficultyDecimal": 14.4,
+        "chartDesigner": "Adashi ~Apocalypse among the Stars, Hellfire across the Universe~",
+        "jacketDesigner": "Saclia"
       }
     ]
   }
