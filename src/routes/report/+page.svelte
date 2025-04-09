@@ -21,7 +21,7 @@
 <div class="report-container">
 	<div class="header">
 		<div class="rating-info">
-			<span class="rating-label">Avg: {scores.best30Average.toFixed(3)}</span>
+			<span class="rating-label">Avg: {scores.best40Average.toFixed(3)}</span>
 			<span class="separator">|</span>
 			<span class="rating-label">Target: {scores.targetRating.toFixed(3)}</span>
 		</div>

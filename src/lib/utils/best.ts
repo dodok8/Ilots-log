@@ -1,7 +1,7 @@
 import type { ChartInfo } from '$lib/types/chart';
 import type { Score } from '$lib/types/score';
 
-export function getBest30(scores: Score[]): ChartInfo[] {
+export function getBest40(scores: Score[]): ChartInfo[] {
 	return scores
 		.flatMap((song): ChartInfo[] =>
 			song.charts
@@ -17,27 +17,24 @@ export function getBest30(scores: Score[]): ChartInfo[] {
 				}))
 		)
 		.sort((a, b) => b.rating - a.rating)
-		.slice(0, 30);
+		.slice(0, 40);
 }
 
-export function getBest30Average(charts: ChartInfo[]): number {
+export function getBest40Average(charts: ChartInfo[]): number {
 	if (charts.length === 0) return 0;
 
 	const best10 = charts.slice(0, 10);
-	const better20 = charts.slice(10, 30);
+	const better10 = charts.slice(10, 20);
+	const last20 = charts.slice(20, 40);
 
-	// 충분한 곡이 없는 경우 처리
-	if (best10.length < 10) {
-		return best10.reduce((acc, chart) => acc + chart.rating, 0) / best10.length;
-	}
+	// TODO: 알려진 반올림 규칙이 이다면 반영
+	const best10rating = best10.reduce((acc, chart) => acc + chart.rating, 0);
+	const better10rating = better10.reduce((acc, chart) => acc + chart.rating, 0);
+	const last20rating = last20.reduce((acc, chart) => acc + chart.rating, 0);
 
-	const best10Rating = best10.reduce((acc, chart) => acc + chart.rating, 0) / 10;
-	const better20Rating =
-		better20.length > 0
-			? better20.reduce((acc, chart) => acc + chart.rating, 0) / Math.min(better20.length, 20)
-			: 0;
-
-	return best10Rating * 0.7 + better20Rating * 0.3;
+	const totalRating =
+		(best10rating * 0.6) / 10 + (better10rating * 0.2) / 10 + (last20rating * 0.2) / 20;
+	return totalRating;
 }
 
 export function getPotentialCharts(scores: Score[], targetRating: number): ChartInfo[] {
