@@ -46,8 +46,8 @@ export function getPotentialCharts(scores: Score[], targetRating: number): Chart
 					(chart) =>
 						// 현재 점수가 0이 아니고
 						chart.score !== 0 &&
-						// 난이도가 목표 레이팅 - 3.6 이상인 차트만 선택
-						chart.difficultyDecimal >= targetRating - 3.6
+						// 난이도가 목표 레이팅 - 3.7 이상인 차트만 선택
+						chart.difficultyDecimal >= targetRating - 3.7
 				)
 				.map((chart) => ({
 					songId: song.id,
