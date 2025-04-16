@@ -27,14 +27,15 @@ export function getBest40Average(charts: ChartInfo[]): number {
 	const better10 = charts.slice(10, 20);
 	const last20 = charts.slice(20, 40);
 
-	// TODO: 알려진 반올림 규칙이 이다면 반영
 	const best10rating = best10.reduce((acc, chart) => acc + chart.rating, 0);
 	const better10rating = better10.reduce((acc, chart) => acc + chart.rating, 0);
 	const last20rating = last20.reduce((acc, chart) => acc + chart.rating, 0);
 
 	const totalRating =
 		(best10rating * 0.6) / 10 + (better10rating * 0.2) / 10 + (last20rating * 0.2) / 20;
-	return totalRating;
+	// 최종 레이팅을 소수점 아래 4자리까지 반올림 후 소수점 아래 3자리가 되도록 버림(3자리까지만 출력).
+	// Ref: https://wiki.rotaeno.cn/Rating
+	return Math.floor(Math.round(totalRating * 10000.0) / 10.0) / 1000.0;
 }
 
 export function getPotentialCharts(scores: Score[], targetRating: number): ChartInfo[] {
@@ -45,8 +46,8 @@ export function getPotentialCharts(scores: Score[], targetRating: number): Chart
 					(chart) =>
 						// 현재 점수가 0이 아니고
 						chart.score !== 0 &&
-						// 난이도가 목표 레이팅 - 3.6 이상인 차트만 선택
-						chart.difficultyDecimal >= targetRating - 3.6
+						// 난이도가 목표 레이팅 - 3.7 이상인 차트만 선택
+						chart.difficultyDecimal >= targetRating - 3.7
 				)
 				.map((chart) => ({
 					songId: song.id,
