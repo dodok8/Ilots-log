@@ -22,9 +22,12 @@ export function getBest40(scores: Score[]): ChartInfo[] {
 	for (const chart of sorted_charts) {
 		if (best40.length >= 40) break;
 		// IV와 IV-α 중 레이팅이 높은 차트만 추가
+		// 이미 레이팅으로 정렬된 상태이므로, 먼저 추가된 IV 또는 IV-α 차트가 있는지만 확인하면 됨
 		if (
-			chart.difficultyLevel.startsWith('IV') &&
-			best40.some((c) => c.difficultyLevel.startsWith('IV') && c.songId == chart.songId, best40)
+			(chart.difficultyLevel === 'IV' &&
+				best40.some((c) => c.difficultyLevel === 'IV-α' && c.songId === chart.songId)) ||
+			(chart.difficultyLevel === 'IV-α' &&
+				best40.some((c) => c.difficultyLevel === 'IV' && c.songId === chart.songId))
 		) {
 			continue;
 		}
