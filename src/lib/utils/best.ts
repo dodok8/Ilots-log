@@ -2,7 +2,7 @@ import type { ChartInfo } from '$lib/types/chart';
 import type { Score } from '$lib/types/score';
 
 export function getBest40(scores: Score[]): ChartInfo[] {
-	return scores
+	const sorted_charts = scores
 		.flatMap((song): ChartInfo[] =>
 			song.charts
 				.filter((chart) => (chart.rating ?? 0) > 0)
@@ -16,8 +16,25 @@ export function getBest40(scores: Score[]): ChartInfo[] {
 					rating: chart.rating ?? 0
 				}))
 		)
-		.sort((a, b) => b.rating - a.rating)
-		.slice(0, 40);
+		.sort((a, b) => b.rating - a.rating);
+
+	const best40: ChartInfo[] = [];
+	for (const chart of sorted_charts) {
+		if (best40.length >= 40) break;
+		// IV와 IV-α 중 레이팅이 높은 차트만 추가
+		// 이미 레이팅으로 정렬된 상태이므로, 먼저 추가된 IV 또는 IV-α 차트가 있는지만 확인하면 됨
+		if (
+			(chart.difficultyLevel === 'IV' &&
+				best40.some((c) => c.difficultyLevel === 'IV-α' && c.songId === chart.songId)) ||
+			(chart.difficultyLevel === 'IV-α' &&
+				best40.some((c) => c.difficultyLevel === 'IV' && c.songId === chart.songId))
+		) {
+			continue;
+		}
+		best40.push(chart);
+	}
+
+	return best40;
 }
 
 export function getBest40Average(charts: ChartInfo[]): number {
@@ -33,9 +50,7 @@ export function getBest40Average(charts: ChartInfo[]): number {
 
 	const totalRating =
 		(best10rating * 0.6) / 10 + (better10rating * 0.2) / 10 + (last20rating * 0.2) / 20;
-	// 최종 레이팅을 소수점 아래 4자리까지 반올림 후 소수점 아래 3자리가 되도록 버림(3자리까지만 출력).
-	// Ref: https://wiki.rotaeno.cn/Rating
-	return Math.floor(Math.round(totalRating * 10000.0) / 10.0) / 1000.0;
+	return Math.floor(totalRating * 1000.0) / 1000.0;
 }
 
 export function getPotentialCharts(scores: Score[], targetRating: number): ChartInfo[] {

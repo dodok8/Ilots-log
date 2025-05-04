@@ -16,7 +16,7 @@ export function calculateSongRating(difficulty: number, score: number): number {
 	} else if (score < 1008000) {
 		rating = difficulty + 2.4 + (score - 1004000) / 4000;
 	} else if (score < 1010000) {
-		rating = difficulty + 3.4 + (score - 1008000) / 10000;
+		rating = difficulty + 3.4 + (score - 1008000) / 9995;
 	} else {
 		rating = difficulty + 3.7;
 	}
