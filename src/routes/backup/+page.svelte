@@ -6,7 +6,6 @@
 
 	$effect(() => {
 		if (ready[0] && ready[1]) {
-			console.log("hi")
 			driveService.initialize();
 		}
 	});
