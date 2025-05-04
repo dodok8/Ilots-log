@@ -61,6 +61,7 @@
 	async function downloadFromCloud() {
 		try {
 			await driveService?.requestAuth();
+			await driveService?.initializeBackup();
 			const jsonString = await driveService?.downloadBackup();
 			const jsonData = JSON.parse(jsonString || '');
 			scores.load(jsonData);
@@ -80,6 +81,7 @@
 
 		try {
 			await driveService?.requestAuth();
+			await driveService?.initializeBackup();
 			await driveService?.eraseBackup();
 			alert('Successfully deleted backup from Google Drive!');
 		} catch (error) {
