@@ -94,9 +94,6 @@ class DriveService {
 
 	async uploadBackup(content: string): Promise<void> {
 		try {
-			if (!this.backupFolderId) {
-				await this.initializeBackup();
-			}
 
 			// Create form data for multipart upload
 			const metadata = new Blob(
