@@ -44,15 +44,31 @@ class DriveService {
 			throw new Error('Service not initialized');
 		}
 
+		// Check if a token is already available and likely valid
+		// @ts-expect-error: gapi.auth might not be fully typed depending on setup
+		const currentToken = gapi.auth?.getToken();
+
+		if (currentToken && currentToken.access_token) {
+			// If a token exists, assume the user is already authorized.
+			// Google's client library usually handles token refresh implicitly.
+			console.log('User already authorized.');
+			return Promise.resolve();
+		}
+
+		// If no token, proceed with the authorization request flow
 		return new Promise((resolve, reject) => {
 			this.tokenClient!.callback = (response) => {
 				if (response.error) {
-					reject(response);
+					console.error('Auth error:', response);
+					reject(new Error(`Authorization failed: ${response.error}`));
 				} else {
+					console.log('Auth successful.');
 					resolve();
 				}
 			};
 
+			// This will likely open the Google Auth popup if the user isn't signed in
+			// or hasn't granted permission before.
 			this.tokenClient!.requestAccessToken();
 		});
 	}
@@ -94,7 +110,6 @@ class DriveService {
 
 	async uploadBackup(content: string): Promise<void> {
 		try {
-
 			// Create form data for multipart upload
 			const metadata = new Blob(
 				[
