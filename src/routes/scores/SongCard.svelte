@@ -137,6 +137,7 @@
 		font-size: 1.5rem;
 		font-weight: 600;
 		color: #1a1a1a;
+		overflow-wrap: break-word;
 	}
 
 	.score-id {
@@ -295,10 +296,18 @@
 
 	/* 모바일 대응 */
 	@media (max-width: 640px) {
+		.score-header {
+			flex-direction: column;
+			align-items: center;
+		}
 		.chart-info {
 			flex-direction: column;
 			align-items: flex-start;
 			gap: 0.5rem;
+		}
+		
+		.score-info {
+			width: 100%;
 		}
 	}
 </style>
