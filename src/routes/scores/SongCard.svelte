@@ -177,14 +177,12 @@
 		padding: 0.5rem 15px;
 		border-radius: 0.5rem;
 		background: #f8f9fa;
-		gap: 1.5rem;
 		width: calc(100% - 15px);
 	}
 
 	.chart-info {
 		display: flex;
 		align-items: center;
-		gap: 1.5rem;
 		flex: 1;
 	}
 
@@ -219,9 +217,8 @@
 	.score-container {
 		display: flex;
 		align-items: center;
-		gap: 1.5rem;
-		min-width: 8rem;
 		justify-content: flex-end;
+		max-width: 40%;
 	}
 
 	.calculated-score {
@@ -233,7 +230,7 @@
 	}
 
 	.score-input {
-		width: 6rem;
+		width: 70%;
 		padding: 0.5rem 0.75rem;
 		border: 1px solid #e2e8f0;
 		border-radius: 0.375rem;
@@ -303,9 +300,8 @@
 		.chart-info {
 			flex-direction: column;
 			align-items: flex-start;
-			gap: 0.5rem;
 		}
-		
+
 		.score-info {
 			width: 100%;
 		}
