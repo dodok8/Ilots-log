@@ -24,15 +24,20 @@ const initializeScores = (savedScores?: Score[]): Score[] => {
 			return songs.map((song) => {
 				const existingScore = existingScores.get(song.id);
 				if (existingScore) {
-					return existingScore;
+					// 기존 점수를 유지하면서 최신 곡 정보와 병합
+					return mergeScoreWithLatestSongData(song, existingScore);
 				}
 				// 새로운 곡에 대한 기본 스코어 생성
 				return createEmptyScore(song);
 			});
 		}
 
-		// 모든 곡이 존재하는지 확인
+		// 모든 곡이 존재하는지 확인 (이 부분도 병합 로직을 적용할 수 있음)
+		// 만약 저장된 데이터가 최신 곡 정보와 다를 수 있다면, 여기서도 병합 로직 적용 고려
 		if (savedScores.every((score) => songs.find((s) => s.id === score.id))) {
+			// 필요하다면 여기서도 모든 savedScores 항목에 대해 mergeScoreWithLatestSongData 적용
+			// 예: return savedScores.map(score => mergeScoreWithLatestSongData(songs.find(s => s.id === score.id)!, score));
+			// 현재는 그대로 반환
 			return savedScores;
 		}
 	} catch (e) {
@@ -41,6 +46,33 @@ const initializeScores = (savedScores?: Score[]): Score[] => {
 
 	// 실패시 새로 초기화
 	return createInitialScores();
+};
+
+// 기존 점수와 최신 곡 정보를 병합하는 함수
+const mergeScoreWithLatestSongData = (song: Song, existingScore: Score): Score => {
+	// 최신 곡 정보 기반으로 기본 Score 객체 생성
+	const newScore: Score = {
+		id: song.id,
+		imageUrl: song.imageUrl,
+		artist: song.artist,
+		releaseVersion: song.releaseVersion,
+		chapter: song.chapter,
+		title_localized: song.title_localized,
+		source_localized: song.source_localized,
+		charts: song.charts.map((latestChart) => {
+			// 기존 점수에서 해당 난이도의 차트 찾기
+			const existingChart = existingScore.charts.find(
+				(c) => c.difficultyLevel === latestChart.difficultyLevel
+			);
+			// 기존 점수가 있으면 점수와 레이팅 유지, 없으면 0으로 초기화
+			return {
+				...latestChart,
+				score: existingChart?.score ?? 0,
+				rating: existingChart?.rating ?? 0
+			};
+		})
+	};
+	return newScore;
 };
 
 // 새로운 헬퍼 함수들
