@@ -2,7 +2,7 @@ import { getBest40, getBest40Average } from '$lib/utils/best';
 import type { Song } from '$lib/types/song';
 import type { OldScore, Score } from '$lib/types/score';
 import songsData from '$lib/data/songs.json';
-import { convertOldScoreArrayToNewScoreArray } from '$lib/utils/convtert'; // 경로 확인
+import { convertScores } from '$lib/utils/convtert';
 
 const songs = songsData as Song[];
 const STORAGE_KEY = 'rotaeno-scores';
@@ -33,14 +33,7 @@ const initializeScores = (savedScores?: Score[]): Score[] => {
 			});
 		}
 
-		// 모든 곡이 존재하는지 확인 (이 부분도 병합 로직을 적용할 수 있음)
-		// 만약 저장된 데이터가 최신 곡 정보와 다를 수 있다면, 여기서도 병합 로직 적용 고려
-		if (savedScores.every((score) => songs.find((s) => s.title === score.title))) {
-			// 필요하다면 여기서도 모든 savedScores 항목에 대해 mergeScoreWithLatestSongData 적용
-			// 예: return savedScores.map(score => mergeScoreWithLatestSongData(songs.find(s => s.id === score.id)!, score));
-			// 현재는 그대로 반환
-			return savedScores;
-		}
+		return savedScores.map((score, idx) => mergeScoreWithLatestSongData(songs[idx], score));
 	} catch (e) {
 		console.error('Failed to process saved scores:', e);
 	}
@@ -147,7 +140,7 @@ class Scores {
 
 		if (isOldScoreArray(loadedScoresInput)) {
 			console.log('Detected OldScore format, converting to new Score format...');
-			scoresToInitialize = convertOldScoreArrayToNewScoreArray(loadedScoresInput);
+			scoresToInitialize = loadedScoresInput.map(convertScores);
 		} else {
 			scoresToInitialize = loadedScoresInput as Score[];
 		}
