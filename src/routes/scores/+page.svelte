@@ -9,12 +9,8 @@
 			const term = searchTerm.toLowerCase();
 
 			// ID 검색
-			if (score.id.toLowerCase().includes(term)) return true;
-
-			// 모든 언어의 title 검색
-			return Object.values(score.title_localized).some((title) =>
-				title.toLowerCase().includes(term)
-			);
+			if (score.title.toLowerCase().includes(term)) return true;
+			if (score.ver.includes(term)) return true;
 		})
 	);
 

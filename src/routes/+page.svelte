@@ -7,7 +7,7 @@
 		<h1>Ilot's Log</h1>
 		<p class="subtitle">
 			A rating calculator and song recommender for Rotaeno players.<br /> Based on the music added
-			in Version {scores.scores.at(-1)?.releaseVersion}.
+			in Version {scores.scores.at(-1)?.ver}.
 		</p>
 	</section>
 

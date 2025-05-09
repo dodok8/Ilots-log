@@ -7,7 +7,7 @@
 		getPotentialCharts(scores.scores, scores.targetRating)
 			.map((chart) => ({
 				...chart,
-				requiredScore: calculateRequiredScore(chart.difficultyDecimal, scores.targetRating)
+				requiredScore: calculateRequiredScore(chart.const, scores.targetRating)
 			}))
 			.map((chart) => ({
 				...chart,
@@ -32,14 +32,14 @@
 		<ul>
 			{#each potentialCharts as chart}
 				<li>
-					<div class="chart-info" data-difficulty={chart.difficultyLevel}>
-						<h4>{chart.songTitle}</h4>
+					<div class="chart-info" data-difficulty={chart.difficulty}>
+						<h4>{chart.title}</h4>
 						<div class="score-info">
 							<span>
-								[<span class={`difficulty-level ${chart.difficultyLevel}`}
-									>{chart.difficultyLevel}</span
+								[<span class={`difficulty-level ${chart.difficulty}`}
+									>{chart.difficulty}</span
 								>]
-								{chart.difficultyDecimal}
+								{chart.const}
 							</span>
 							<span class="score-group">
 								<span class="score-current">
@@ -132,19 +132,19 @@
 	}
 
 	/* 난이도별 보더 색상 */
-	.chart-info[data-difficulty='I'] {
+	.chart-info[data-difficulty='Ⅰ'] {
 		border-left-color: #1cda1b;
 	}
-	.chart-info[data-difficulty='II'] {
+	.chart-info[data-difficulty='Ⅱ'] {
 		border-left-color: #3b90ff;
 	}
-	.chart-info[data-difficulty='III'] {
+	.chart-info[data-difficulty='Ⅲ'] {
 		border-left-color: #ef960d;
 	}
-	.chart-info[data-difficulty='IV'] {
+	.chart-info[data-difficulty='Ⅳ'] {
 		border-left-color: #dc43e5;
 	}
-	.chart-info[data-difficulty='IV-α'] {
+	.chart-info[data-difficulty='Ⅳ-α'] {
 		border-left-color: #bd6eff;
 	}
 
@@ -196,19 +196,19 @@
 		font-weight: 600;
 	}
 
-	.difficulty-level.I {
+	.difficulty-level.Ⅰ {
 		color: #1cda1b;
 	}
-	.difficulty-level.II {
+	.difficulty-level.Ⅱ {
 		color: #3b90ff;
 	}
-	.difficulty-level.III {
+	.difficulty-level.Ⅲ {
 		color: #ef960d;
 	}
-	.difficulty-level.IV {
+	.difficulty-level.Ⅳ {
 		color: #dc43e5;
 	}
-	.difficulty-level.IV-α {
+	.difficulty-level.Ⅳ-α {
 		color: #bd6eff;
 	}
 
