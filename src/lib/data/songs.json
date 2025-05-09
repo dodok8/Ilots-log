@@ -230,7 +230,24 @@
     "chartDesigner": "イ号P",
     "composer": "kurobe studio",
     "imageUrl": "https://cdn.wikiwiki.jp/to/w/rotaeno/A%20Clock/::ref/acl.png.webp",
-    "charts": [],
+    "charts": [
+      {
+        "difficulty": "Ⅰ",
+        "const": 2
+      },
+      {
+        "difficulty": "Ⅱ",
+        "const": 3
+      },
+      {
+        "difficulty": "Ⅲ",
+        "const": 7.5
+      },
+      {
+        "difficulty": "Ⅳ",
+        "const": 10.8
+      }
+    ],
     "pack": "基本曲",
     "ver": "1.0.3"
   },
@@ -409,7 +426,24 @@
     "chartDesigner": "Adashi",
     "composer": "Kirara Magic feat. Shiroroll",
     "imageUrl": "https://cdn.wikiwiki.jp/to/w/rotaeno/Witches%27%20Party/::ref/wit.png.webp",
-    "charts": [],
+    "charts": [
+      {
+        "difficulty": "Ⅰ",
+        "const": 3
+      },
+      {
+        "difficulty": "Ⅱ",
+        "const": 5
+      },
+      {
+        "difficulty": "Ⅲ",
+        "const": 9.5
+      },
+      {
+        "difficulty": "Ⅳ",
+        "const": 11.2
+      }
+    ],
     "pack": "基本曲",
     "ver": "1.0.3"
   },
@@ -728,7 +762,24 @@
     "chartDesigner": "j!ang",
     "composer": "VeetaCrush",
     "imageUrl": "https://cdn.wikiwiki.jp/to/w/rotaeno/Sterelogue/::ref/ste.png.webp",
-    "charts": [],
+    "charts": [
+      {
+        "difficulty": "Ⅰ",
+        "const": 2
+      },
+      {
+        "difficulty": "Ⅱ",
+        "const": 4
+      },
+      {
+        "difficulty": "Ⅲ",
+        "const": 10
+      },
+      {
+        "difficulty": "Ⅳ",
+        "const": 11.9
+      }
+    ],
     "pack": "機械都市",
     "ver": "1.0.3"
   },
@@ -907,7 +958,24 @@
     "chartDesigner": "イ号PxSoul",
     "composer": "テヅカ x Qayo",
     "imageUrl": "https://cdn.wikiwiki.jp/to/w/rotaeno/%E4%BA%8C%E4%BA%8C%20-%E9%82%87%E3%80%85-/::ref/nini.png.webp",
-    "charts": [],
+    "charts": [
+      {
+        "difficulty": "Ⅰ",
+        "const": 2
+      },
+      {
+        "difficulty": "Ⅱ",
+        "const": 4
+      },
+      {
+        "difficulty": "Ⅲ",
+        "const": 9.8
+      },
+      {
+        "difficulty": "Ⅳ",
+        "const": 12.6
+      }
+    ],
     "pack": "街角のレストラン",
     "ver": "1.0.3"
   },
