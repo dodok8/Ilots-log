@@ -11,7 +11,7 @@
 		if (chart.score === 0) {
 			chart.rating = 0;
 		} else if (chart.score !== undefined && chart.score !== null) {
-			chart.rating = calculateSongRating(chart.const, chart.score);
+			chart.rating = calculateSongRating(chart.difficultyDecimal, chart.score);
 		}
 
 		// Debounce save operation
@@ -29,32 +29,49 @@
 				class="score-image"
 				alt={`File: songs ${score.id}.png`}
 				loading="lazy"
-				src={score.imageUrl}
+				src={`https://wiki.rotaeno.cn/${score.imageUrl}`}
 			/>
 		</div>
 		<div class="score-info">
 			<div class="score-title">
 				<h3>
-					{score.title}
+					{#each Object.entries(score.title_localized) as info, idx}
+						{info[1]}
+						{#if idx == Object.entries(score.title_localized).length - 1}{:else}{' / '}
+						{/if}
+					{/each}
 				</h3>
-				<span class="score-id">ver: {score.ver}</span>
+				<span class="score-id">ID: {score.id}</span>
 			</div>
 			<div class="song-credits">
 				<span class="artist">
-						composer:	{score.composer} / artwork: {score.artwork}
+					<svg
+						class="icon"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z"
+						/>
+					</svg>
+					{score.artist}
 				</span>
 			</div>
 		</div>
 	</div>
 
 	<div class="charts-container">
-		{#each score.charts as chart, idx (chart.difficulty)}
+		{#each score.charts as chart, idx (chart.difficultyLevel)}
 			<div class="chart-row">
 				<div class="chart-info">
 					<div class="difficulty-badge">
-						<span class={`level ${chart.difficulty}`}>{chart.difficulty}</span>
-						<span class={`decimal ${chart.difficulty}`}>{chart.const}</span>
-						<span class={`rating ${chart.difficulty}`}>
+						<span class={`level ${chart.difficultyLevel}`}>{chart.difficultyLevel}</span>
+						<span class={`decimal ${chart.difficultyLevel}`}>{chart.difficultyDecimal}</span>
+						<span class={`rating ${chart.difficultyLevel}`}>
 							({(chart.rating ?? 0).toFixed(3)})
 						</span>
 					</div>
@@ -226,51 +243,51 @@
 		border-color: #3b90ff;
 		color: #1cda1b;
 	}
-	.decimal.Ⅰ {
+	.decimal.I {
 		background-color: #1cda1b;
 	}
 
-	.level.Ⅱ {
+	.level.II {
 		color: #3b90ff;
 	}
-	.decimal.Ⅱ {
+	.decimal.II {
 		background-color: #3b90ff;
 	}
 
-	.level.Ⅲ {
+	.level.III {
 		color: #ef960d;
 	}
-	.decimal.Ⅲ {
+	.decimal.III {
 		background-color: #ef960d;
 	}
 
-	.level.Ⅳ {
+	.level.IV {
 		color: #dc43e5;
 	}
-	.decimal.Ⅳ {
+	.decimal.IV {
 		background-color: #dc43e5;
 	}
 
-	.level.Ⅳ-α {
+	.level.IV-α {
 		color: #bd6eff;
 	}
-	.decimal.Ⅳ-α {
+	.decimal.IV-α {
 		background-color: #bd6eff;
 	}
 
-	.rating.Ⅰ {
+	.rating.I {
 		color: #1cda1b;
 	}
-	.rating.Ⅱ {
+	.rating.II {
 		color: #3b90ff;
 	}
-	.rating.Ⅲ {
+	.rating.III {
 		color: #ef960d;
 	}
-	.rating.Ⅳ {
+	.rating.IV {
 		color: #dc43e5;
 	}
-	.rating.Ⅳ-α {
+	.rating.IV-α {
 		color: #bd6eff;
 	}
 

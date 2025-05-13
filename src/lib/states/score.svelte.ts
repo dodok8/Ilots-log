@@ -1,8 +1,7 @@
 import { getBest40, getBest40Average } from '$lib/utils/best';
 import type { Song } from '$lib/types/song';
-import type { OldScore, Score } from '$lib/types/score';
+import type { Score } from '$lib/types/score';
 import songsData from '$lib/data/songs.json';
-import { convertScores } from '$lib/utils/convtert';
 
 const songs = songsData as Song[];
 const STORAGE_KEY = 'rotaeno-scores';
@@ -23,7 +22,7 @@ const initializeScores = (savedScores?: Score[]): Score[] => {
 
 			// 모든 곡에 대해 새로운 배열 생성
 			return songs.map((song) => {
-				const existingScore = existingScores.get(song.title);
+				const existingScore = existingScores.get(song.id);
 				if (existingScore) {
 					// 기존 점수를 유지하면서 최신 곡 정보와 병합
 					return mergeScoreWithLatestSongData(song, existingScore);
@@ -33,7 +32,14 @@ const initializeScores = (savedScores?: Score[]): Score[] => {
 			});
 		}
 
-		return savedScores.map((score, idx) => mergeScoreWithLatestSongData(songs[idx], score));
+		// 모든 곡이 존재하는지 확인 (이 부분도 병합 로직을 적용할 수 있음)
+		// 만약 저장된 데이터가 최신 곡 정보와 다를 수 있다면, 여기서도 병합 로직 적용 고려
+		if (savedScores.every((score) => songs.find((s) => s.id === score.id))) {
+			// 필요하다면 여기서도 모든 savedScores 항목에 대해 mergeScoreWithLatestSongData 적용
+			// 예: return savedScores.map(score => mergeScoreWithLatestSongData(songs.find(s => s.id === score.id)!, score));
+			// 현재는 그대로 반환
+			return savedScores;
+		}
 	} catch (e) {
 		console.error('Failed to process saved scores:', e);
 	}
@@ -46,11 +52,17 @@ const initializeScores = (savedScores?: Score[]): Score[] => {
 const mergeScoreWithLatestSongData = (song: Song, existingScore: Score): Score => {
 	// 최신 곡 정보 기반으로 기본 Score 객체 생성
 	const newScore: Score = {
-		...song,
+		id: song.id,
+		imageUrl: song.imageUrl,
+		artist: song.artist,
+		releaseVersion: song.releaseVersion,
+		chapter: song.chapter,
+		title_localized: song.title_localized,
+		source_localized: song.source_localized,
 		charts: song.charts.map((latestChart) => {
 			// 기존 점수에서 해당 난이도의 차트 찾기
 			const existingChart = existingScore.charts.find(
-				(c) => c.difficulty === latestChart.difficulty
+				(c) => c.difficultyLevel === latestChart.difficultyLevel
 			);
 			// 기존 점수가 있으면 점수와 레이팅 유지, 없으면 0으로 초기화
 			return {
@@ -65,7 +77,13 @@ const mergeScoreWithLatestSongData = (song: Song, existingScore: Score): Score =
 
 // 새로운 헬퍼 함수들
 const createEmptyScore = (song: Song): Score => ({
-	...song,
+	id: song.id,
+	imageUrl: song.imageUrl,
+	artist: song.artist,
+	releaseVersion: song.releaseVersion,
+	chapter: song.chapter,
+	title_localized: song.title_localized,
+	source_localized: song.source_localized,
 	charts: song.charts.map((chart) => ({
 		...chart,
 		score: 0,
@@ -74,20 +92,6 @@ const createEmptyScore = (song: Song): Score => ({
 });
 
 const createInitialScores = (): Score[] => songs.map(createEmptyScore);
-
-// OldScore 타입인지 확인하는 간단한 타입 가드 (더 견고하게 만들 수 있음)
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function isOldScoreArray(data: any[]): data is OldScore[] {
-	if (data.length === 0) return false;
-	// OldScore에만 있는 고유한 속성으로 확인 (예: title_localized, artist)
-	const firstItem = data[0];
-	return (
-		firstItem &&
-		typeof firstItem.title_localized === 'object' &&
-		typeof firstItem.artist === 'string' &&
-		firstItem.charts?.[0]?.difficultyLevel !== undefined
-	);
-}
 
 class Scores {
 	scores: Score[] = $state([]);
@@ -131,21 +135,12 @@ class Scores {
 		}
 	}
 
-	load(loadedScoresInput: Score[] | OldScore[]) {
+	load(loadedScores: Score[]) {
 		console.log('Loading scores...');
-		console.log('Loaded scores count:', loadedScoresInput.length);
+		console.log('Loaded scores count:', loadedScores.length);
 		console.log('Current songs count:', songs.length);
 
-		let scoresToInitialize: Score[];
-
-		if (isOldScoreArray(loadedScoresInput)) {
-			console.log('Detected OldScore format, converting to new Score format...');
-			scoresToInitialize = loadedScoresInput.map(convertScores);
-		} else {
-			scoresToInitialize = loadedScoresInput as Score[];
-		}
-
-		this.scores = initializeScores(scoresToInitialize);
+		this.scores = initializeScores(loadedScores);
 		this.save();
 
 		console.log('Final scores count:', this.scores.length);

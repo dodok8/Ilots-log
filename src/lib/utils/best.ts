@@ -7,11 +7,11 @@ export function getBest40(scores: Score[]): ChartInfo[] {
 			song.charts
 				.filter((chart) => (chart.rating ?? 0) > 0)
 				.map((chart) => ({
-					id: song.id,
-					title: song.title,
+					songId: song.id,
+					songTitle: song.title_localized.default,
 					imageUrl: song.imageUrl,
-					difficulty: chart.difficulty,
-					const: chart.const,
+					difficultyLevel: chart.difficultyLevel,
+					difficultyDecimal: chart.difficultyDecimal,
 					score: chart.score ?? 0,
 					rating: chart.rating ?? 0
 				}))
@@ -21,12 +21,13 @@ export function getBest40(scores: Score[]): ChartInfo[] {
 	const best40: ChartInfo[] = [];
 	for (const chart of sorted_charts) {
 		if (best40.length >= 40) break;
-		// IV와 Ⅳ-α 중 레이팅이 높은 차트만 추가
-		// 이미 레이팅으로 정렬된 상태이므로, 먼저 추가된 Ⅳ 또는 Ⅳ-α 차트가 있는지만 확인하면 됨
+		// IV와 IV-α 중 레이팅이 높은 차트만 추가
+		// 이미 레이팅으로 정렬된 상태이므로, 먼저 추가된 IV 또는 IV-α 차트가 있는지만 확인하면 됨
 		if (
-			(chart.difficulty === 'Ⅳ' &&
-				best40.some((c) => c.difficulty === 'Ⅳ-α' && c.id === chart.id)) ||
-			(chart.difficulty === 'Ⅳ-α' && best40.some((c) => c.difficulty === 'Ⅳ' && c.id === chart.id))
+			(chart.difficultyLevel === 'IV' &&
+				best40.some((c) => c.difficultyLevel === 'IV-α' && c.songId === chart.songId)) ||
+			(chart.difficultyLevel === 'IV-α' &&
+				best40.some((c) => c.difficultyLevel === 'IV' && c.songId === chart.songId))
 		) {
 			continue;
 		}
@@ -61,14 +62,14 @@ export function getPotentialCharts(scores: Score[], targetRating: number): Chart
 						// 현재 점수가 0이 아니고
 						chart.score !== 0 &&
 						// 난이도가 목표 레이팅 - 3.7 이상인 차트만 선택
-						chart.rating >= targetRating - 3.7
+						chart.difficultyDecimal >= targetRating - 3.7
 				)
 				.map((chart) => ({
-					id: song.id,
-					title: song.title,
+					songId: song.id,
+					songTitle: song.title_localized.default,
 					imageUrl: song.imageUrl,
-					difficulty: chart.difficulty,
-					const: chart.const,
+					difficultyLevel: chart.difficultyLevel,
+					difficultyDecimal: chart.difficultyDecimal,
 					score: chart.score ?? 0,
 					rating: chart.rating ?? 0
 				}))

@@ -5,21 +5,21 @@
 	export let rank: number;
 </script>
 
-<div class="chart-card" data-difficulty={chart.difficulty}>
+<div class="chart-card" data-difficulty={chart.difficultyLevel}>
 	<div class="rank">#{rank}</div>
 	<div class="image-container">
 		<img
-			src={chart.imageUrl}
-			alt={chart.title}
+			src={`https://images.weserv.nl/?url=wiki.rotaeno.cn/${chart.imageUrl}`}
+			alt={chart.songTitle}
 			loading="lazy"
 			crossorigin="anonymous"
 		/>
 	</div>
 	<div class="chart-info">
-		<h3 class="song-title">{chart.title}</h3>
+		<h3 class="song-title">{chart.songTitle}</h3>
 		<div class="difficulty">
-			<span class={`level ${chart.difficulty}`}>{chart.difficulty}</span>
-			<span class={`decimal ${chart.const}`}>{chart.const}</span>
+			<span class={`level ${chart.difficultyLevel}`}>{chart.difficultyLevel}</span>
+			<span class={`decimal ${chart.difficultyLevel}`}>{chart.difficultyDecimal}</span>
 		</div>
 		<div class="score-info">
 			<span class="score">{chart.score.toLocaleString()}</span>
@@ -38,19 +38,19 @@
 		border-left: 4px solid;
 	}
 
-	.chart-card[data-difficulty='Ⅰ'] {
+	.chart-card[data-difficulty='I'] {
 		border-color: #1cda1b;
 	}
-	.chart-card[data-difficulty='Ⅱ'] {
+	.chart-card[data-difficulty='II'] {
 		border-color: #3b90ff;
 	}
-	.chart-card[data-difficulty='Ⅲ'] {
+	.chart-card[data-difficulty='III'] {
 		border-color: #ef960d;
 	}
-	.chart-card[data-difficulty='Ⅳ'] {
+	.chart-card[data-difficulty='IV'] {
 		border-color: #dc43e5;
 	}
-	.chart-card[data-difficulty='Ⅳ-α'] {
+	.chart-card[data-difficulty='IV-α'] {
 		border-color: #bd6eff;
 	}
 
@@ -100,19 +100,19 @@
 		font-weight: 600;
 	}
 
-	.level.Ⅰ {
+	.level.I {
 		color: #1cda1b;
 	}
-	.level.Ⅱ {
+	.level.II {
 		color: #3b90ff;
 	}
-	.level.Ⅲ {
+	.level.III {
 		color: #ef960d;
 	}
-	.level.Ⅳ {
+	.level.IV {
 		color: #dc43e5;
 	}
-	.level.Ⅳ-α {
+	.level.IV-α {
 		color: #bd6eff;
 	}
 
