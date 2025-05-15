@@ -35,13 +35,9 @@
 		<div class="score-info">
 			<div class="score-title">
 				<h3>
-					{#each Object.entries(score.title_localized) as info, idx}
-						{info[1]}
-						{#if idx == Object.entries(score.title_localized).length - 1}{:else}{' / '}
-						{/if}
-					{/each}
+					{score.title_localized.default}
 				</h3>
-				<span class="score-id">ID: {score.id}</span>
+				<span class="score-id">ID: {score.id} Ver: {score.releaseVersion}</span>
 			</div>
 			<div class="song-credits">
 				<span class="artist">
