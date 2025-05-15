@@ -1,15 +1,35 @@
 <script lang="ts">
 	import type { ChartInfo } from '$lib/types/chart';
+	import { onMount } from 'svelte';
 
-	export let chart: ChartInfo;
-	export let rank: number;
+	let { chart, rank }: { chart: ChartInfo, rank: number } = $props();
+	let imageSrc: string = $state('');
+
+	onMount(async () => {
+		try {
+			// 동적으로 특정 ID에 맞는 이미지만 로드
+			const imageModule = await import(`/src/lib/data/images/${chart.songId}.avif`).catch(() => null);
+			
+			if (imageModule) {
+				// 로컬 이미지가 있으면 사용
+				imageSrc = imageModule.default;
+			} else {
+				// 로컬에 없으면 원격 이미지로 폴백
+				imageSrc = `https://images.weserv.nl/?url=wiki.rotaeno.cn/${chart.imageUrl}`;
+			}
+		} catch (error) {
+			// 로드 실패 시 원격 이미지 사용
+			imageSrc = `https://images.weserv.nl/?url=wiki.rotaeno.cn/${chart.imageUrl}`;
+		}
+	});
+
 </script>
 
 <div class="chart-card" data-difficulty={chart.difficultyLevel}>
 	<div class="rank">#{rank}</div>
 	<div class="image-container">
 		<img
-			src={`https://images.weserv.nl/?url=wiki.rotaeno.cn/${chart.imageUrl}`}
+			src={imageSrc}
 			alt={chart.songTitle}
 			loading="lazy"
 			crossorigin="anonymous"

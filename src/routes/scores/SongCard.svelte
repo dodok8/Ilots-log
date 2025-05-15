@@ -2,9 +2,29 @@
 	import type { Score } from '$lib/types/score';
 	import { calculateSongRating } from '$lib/utils/rating';
 	import { scores } from '$lib/states/score.svelte';
+	import { onMount } from 'svelte';
 
 	let { score = $bindable() }: { score: Score } = $props();
 	let saveTimeout: number;
+
+	let imageSrc: string = $state('');
+	onMount(async () => {
+		try {
+			// 동적으로 특정 ID에 맞는 이미지만 로드
+			const imageModule = await import(`/src/lib/data/images/${score.id}.avif`).catch(() => null);
+			
+			if (imageModule) {
+				// 로컬 이미지가 있으면 사용
+				imageSrc = imageModule.default;
+			} else {
+				// 로컬에 없으면 원격 이미지로 폴백
+				imageSrc = `https://wiki.rotaeno.cn/${score.imageUrl}`;
+			}
+		} catch (error) {
+			// 로드 실패 시 원격 이미지 사용
+			imageSrc = `https://wiki.rotaeno.cn/${score.imageUrl}`;
+		}
+	});
 
 	// 점수가 변경될 때마다 해당 차트의 rating만 계산하고 debounce된 저장 실행
 	const updateRating = (chart: Score['charts'][0]) => {
@@ -27,9 +47,9 @@
 		<div class="img-container">
 			<img
 				class="score-image"
-				alt={`File: songs ${score.id}.png`}
+				alt={`Song: ${score.id}`}
 				loading="lazy"
-				src={`https://wiki.rotaeno.cn/${score.imageUrl}`}
+				src={imageSrc}
 			/>
 		</div>
 		<div class="score-info">
