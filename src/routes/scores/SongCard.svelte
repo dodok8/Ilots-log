@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Score } from '$lib/types/score';
+	import type { ChartInfo } from '$lib/types/chart';
 	import { calculateSongRating } from '$lib/utils/rating';
 	import { scores } from '$lib/states/score.svelte';
 	import { onMount } from 'svelte';
@@ -8,21 +9,20 @@
 	let saveTimeout: number;
 
 	let imageSrc: string = $state('');
-	onMount(async () => {
-		try {
-			// 동적으로 특정 ID에 맞는 이미지만 로드
-			const imageModule = await import(`/src/lib/data/images/${score.id}.avif`).catch(() => null);
-			
-			if (imageModule) {
-				// 로컬 이미지가 있으면 사용
-				imageSrc = imageModule.default;
-			} else {
-				// 로컬에 없으면 원격 이미지로 폴백
-				imageSrc = `https://wiki.rotaeno.cn/${score.imageUrl}`;
-			}
-		} catch (error) {
-			// 로드 실패 시 원격 이미지 사용
-			imageSrc = `https://wiki.rotaeno.cn/${score.imageUrl}`;
+	// 빌드 시점에 모든 이미지 파일 매핑 (필요한 것만 사용)
+	const imageFiles = import.meta.glob('/src/lib/data/images/*.avif', { eager: true, query: '?url', import: 'default' }) as Record<string, string>;
+
+	onMount(() => {
+		// score.id에 해당하는 이미지 파일 경로 생성
+		const imagePath = `/src/lib/data/images/${score.id}.avif`;
+
+		// 해당 경로의 이미지가 있는지 확인
+		if (imagePath in imageFiles) {
+			// 로컬 이미지가 있는 경우
+			imageSrc = imageFiles[imagePath];
+		} else {
+			// 로컬에 없는 경우 원격 이미지로 폴백
+			imageSrc = `https://images.weserv.nl/?url=wiki.rotaeno.cn/${score.imageUrl}`;
 		}
 	});
 
