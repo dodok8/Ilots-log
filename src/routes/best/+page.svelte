@@ -13,9 +13,8 @@
 			const canvas = await html2canvas(containerRef, {
 				useCORS: true,
 				allowTaint: true,
-				width: 1200,
-				scale: 2, // 고해상도를 위해
-				backgroundColor: '#ffffff',
+				windowWidth: 1920,
+				backgroundColor: '#f7fafc',
 				ignoreElements: (element) => {
 					// 다운로드 버튼을 캡처에서 제외
 					return element === downloadBtn;
