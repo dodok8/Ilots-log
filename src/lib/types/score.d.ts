@@ -1,21 +1,4 @@
-export type Score = {
-	title: string;
-	id: string;
-	imageUrl: string;
-	pack: string;
-	composer: string;
-	chartDesigner: string;
-	artwork: string;
-	ver: string;
-	charts: {
-		difficulty: 'Ⅰ' | 'Ⅱ' | 'Ⅲ' | 'Ⅳ' | 'Ⅳ-α';
-		const: number;
-		score: number;
-		rating: number;
-	}[];
-};
-
-export interface OldScore {
+export interface Score {
 	id: string;
 	imageUrl: string;
 	artist: string;

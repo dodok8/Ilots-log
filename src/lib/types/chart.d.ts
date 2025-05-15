@@ -1,9 +1,9 @@
 export interface ChartInfo {
-	id: string;
-	title: string;
+	songId: string;
+	songTitle: string;
 	imageUrl: string;
-	difficulty: 'Ⅰ' | 'Ⅱ' | 'Ⅲ' | 'Ⅳ' | 'Ⅳ-α';
-	const: number;
+	difficultyLevel: string;
+	difficultyDecimal: number;
 	score: number;
 	rating: number;
 }
