@@ -50,9 +50,9 @@
 	.chart-card {
 		position: relative;
 		background: white;
-		border-radius: 1rem;
+
 		overflow: hidden;
-		box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+
 		border-left: 4px solid;
 	}
 
