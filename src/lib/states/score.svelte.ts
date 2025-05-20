@@ -32,13 +32,10 @@ const initializeScores = (savedScores?: Score[]): Score[] => {
 			});
 		}
 
-		// 모든 곡이 존재하는지 확인 (이 부분도 병합 로직을 적용할 수 있음)
-		// 만약 저장된 데이터가 최신 곡 정보와 다를 수 있다면, 여기서도 병합 로직 적용 고려
 		if (savedScores.every((score) => songs.find((s) => s.id === score.id))) {
-			// 필요하다면 여기서도 모든 savedScores 항목에 대해 mergeScoreWithLatestSongData 적용
-			// 예: return savedScores.map(score => mergeScoreWithLatestSongData(songs.find(s => s.id === score.id)!, score));
-			// 현재는 그대로 반환
-			return savedScores;
+			return savedScores.map((score) =>
+				mergeScoreWithLatestSongData(songs.find((s) => s.id === score.id)!, score)
+			);
 		}
 	} catch (e) {
 		console.error('Failed to process saved scores:', e);
