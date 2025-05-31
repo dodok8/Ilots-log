@@ -821,7 +821,7 @@
 	{
 		"id": "the-promised-land",
 		"imageUrl": "/images/thumb/e/e4/Songs_the-promised-land.png/256px-Songs_the-promised-land.png",
-		"artist": "[[曲师列表#|]] feat. LynH",
+		"artist": "Iris feat. LynH",
 		"releaseVersion": "1.0.3",
 		"chapter": "第一章 - 旅程的开始",
 		"title_localized": {
@@ -1445,7 +1445,7 @@
 	{
 		"id": "a-philosophical-wanderer",
 		"imageUrl": "/images/thumb/5/51/Songs_a-philosophical-wanderer.png/256px-Songs_a-philosophical-wanderer.png",
-		"artist": "テヅカ x Yuno",
+		"artist": "テヅカ x Yunosuke",
 		"releaseVersion": "1.0.5",
 		"chapter": "星际之声",
 		"title_localized": {
@@ -2342,7 +2342,7 @@
 	{
 		"id": "with-u",
 		"imageUrl": "/images/thumb/9/9d/Songs_with-u.png/256px-Songs_with-u.png",
-		"artist": "ive New Krew feat. リリィ(CV:青木志貴)",
+		"artist": "t+pazolite & Massive New Krew feat. リリィ(CV:青木志貴)",
 		"releaseVersion": "1.4.0",
 		"chapter": "WACCA联动",
 		"title_localized": {
@@ -2966,7 +2966,7 @@
 	{
 		"id": "manifold-hypothesis",
 		"imageUrl": "/images/thumb/d/d3/Songs_manifold-hypothesis.png/256px-Songs_manifold-hypothesis.png",
-		"artist": "o feat. tigerlily",
+		"artist": "cybermiso feat. tigerlily",
 		"releaseVersion": "1.6.0",
 		"chapter": "第二章 - 灾难与希望",
 		"title_localized": {
@@ -3475,7 +3475,7 @@
 		"imageUrl": "/images/thumb/d/d3/Songs_you-n-die.png/256px-Songs_you-n-die.png",
 		"artist": "USAO",
 		"releaseVersion": "1.7.0",
-		"chapter": "TANO*C合作",
+		"chapter": "HARDCORE TANO*C联动",
 		"title_localized": {
 			"default": "You & DIE"
 		},
@@ -3514,7 +3514,7 @@
 		"imageUrl": "/images/thumb/c/cd/Songs_shooting-stars.png/256px-Songs_shooting-stars.png",
 		"artist": "DJ Genki",
 		"releaseVersion": "1.7.0",
-		"chapter": "TANO*C合作",
+		"chapter": "HARDCORE TANO*C联动",
 		"title_localized": {
 			"default": "Shooting☆Stars"
 		},
@@ -3553,7 +3553,7 @@
 		"imageUrl": "/images/thumb/8/8a/Songs_higher.png/256px-Songs_higher.png",
 		"artist": "REDALiCE",
 		"releaseVersion": "1.7.0",
-		"chapter": "TANO*C合作",
+		"chapter": "HARDCORE TANO*C联动",
 		"title_localized": {
 			"default": "HiGHER"
 		},
@@ -3592,7 +3592,7 @@
 		"imageUrl": "/images/thumb/1/19/Songs_maholova.png/256px-Songs_maholova.png",
 		"artist": "aran",
 		"releaseVersion": "1.7.0",
-		"chapter": "TANO*C合作",
+		"chapter": "HARDCORE TANO*C联动",
 		"title_localized": {
 			"default": "Maholova"
 		},
@@ -3631,7 +3631,7 @@
 		"imageUrl": "/images/thumb/f/f4/Songs_recollection.png/256px-Songs_recollection.png",
 		"artist": "Kobaryo",
 		"releaseVersion": "1.7.0",
-		"chapter": "TANO*C合作",
+		"chapter": "HARDCORE TANO*C联动",
 		"title_localized": {
 			"default": "Recollection"
 		},
@@ -3670,7 +3670,7 @@
 		"imageUrl": "/images/thumb/7/73/Songs_lunatixxx-gear.png/256px-Songs_lunatixxx-gear.png",
 		"artist": "Laur vs HyuN",
 		"releaseVersion": "1.7.0",
-		"chapter": "TANO*C合作",
+		"chapter": "HARDCORE TANO*C联动",
 		"title_localized": {
 			"default": "Lunàtixxx Gear"
 		},
@@ -4565,7 +4565,7 @@
 	{
 		"id": "eschatology",
 		"imageUrl": "/images/thumb/3/38/Songs_eschatology.png/256px-Songs_eschatology.png",
-		"artist": "h & Scarlette",
+		"artist": "Tatsh & Scarlette",
 		"releaseVersion": "1.10.0",
 		"chapter": "KALPA联动",
 		"title_localized": {
@@ -4760,7 +4760,7 @@
 	{
 		"id": "eternal-calm",
 		"imageUrl": "/images/thumb/c/c7/Songs_eternal-calm.png/256px-Songs_eternal-calm.png",
-		"artist": "長沼浩太(パパ頑張りました)",
+		"artist": "パパ頑�]]�[[曲师列表#�りました|�りました]])",
 		"releaseVersion": "1.11.0",
 		"chapter": "我们的相遇",
 		"title_localized": {
@@ -6164,7 +6164,7 @@
 	{
 		"id": "break-through-myself",
 		"imageUrl": "/images/thumb/3/38/Songs_break-through-myself.png/256px-Songs_break-through-myself.png",
-		"artist": "uke & Laur",
+		"artist": "DJ Myosuke & Laur",
 		"releaseVersion": "1.15.0",
 		"chapter": "基础歌曲",
 		"title_localized": {
@@ -6205,7 +6205,7 @@
 		"imageUrl": "/images/thumb/8/87/Songs_strange-bar.png/256px-Songs_strange-bar.png",
 		"artist": "Laur",
 		"releaseVersion": "1.15.0",
-		"chapter": "HARDCORE TANO*C联动II",
+		"chapter": "HARDCORE TANO*C联动 II",
 		"title_localized": {
 			"default": "Strange Bar"
 		},
@@ -6244,7 +6244,7 @@
 		"imageUrl": "/images/thumb/f/f5/Songs_un1te.png/256px-Songs_un1te.png",
 		"artist": "Massive New Krew",
 		"releaseVersion": "1.15.0",
-		"chapter": "HARDCORE TANO*C联动II",
+		"chapter": "HARDCORE TANO*C联动 II",
 		"title_localized": {
 			"default": "UN1TE feat.YUC'e"
 		},
@@ -6283,7 +6283,7 @@
 		"imageUrl": "/images/thumb/1/10/Songs_because-of-you.png/256px-Songs_because-of-you.png",
 		"artist": "Srav3R & USAO",
 		"releaseVersion": "1.15.0",
-		"chapter": "HARDCORE TANO*C联动II",
+		"chapter": "HARDCORE TANO*C联动 II",
 		"title_localized": {
 			"default": "Becouse of You"
 		},
@@ -6322,7 +6322,7 @@
 		"imageUrl": "/images/thumb/f/f6/Songs_luminosity.png/256px-Songs_luminosity.png",
 		"artist": "DJ Noriken",
 		"releaseVersion": "1.15.0",
-		"chapter": "HARDCORE TANO*C联动II",
+		"chapter": "HARDCORE TANO*C联动 II",
 		"title_localized": {
 			"default": "Luminosity (Don't you worry)"
 		},
@@ -6361,7 +6361,7 @@
 		"imageUrl": "/images/thumb/a/ac/Songs_dual-doom-deathmatch.png/256px-Songs_dual-doom-deathmatch.png",
 		"artist": "Kobaryo vs HyuN",
 		"releaseVersion": "1.15.0",
-		"chapter": "HARDCORE TANO*C联动II",
+		"chapter": "HARDCORE TANO*C联动 II",
 		"title_localized": {
 			"default": "Dual Doom Deathmatch"
 		},
@@ -6400,7 +6400,7 @@
 		"imageUrl": "/images/thumb/5/5c/Songs_flashback-flicker.png/256px-Songs_flashback-flicker.png",
 		"artist": "t+pazolite",
 		"releaseVersion": "1.15.0",
-		"chapter": "HARDCORE TANO*C联动II",
+		"chapter": "HARDCORE TANO*C联动 II",
 		"title_localized": {
 			"default": "Flashback Flicker"
 		},
@@ -7086,7 +7086,7 @@
 			"default": "シークレット・プラネット"
 		},
 		"source_localized": {
-			"default": "Rotaeno Music Open Submission 2023"
+			"default": "Selected Work @ Rotaeno Music Open Submission 2023"
 		},
 		"charts": [
 			{
@@ -7508,7 +7508,7 @@
 	{
 		"id": "black-lair",
 		"imageUrl": "/images/thumb/f/fa/Songs_black-lair.png/256px-Songs_black-lair.png",
-		"artist": "Sakuzyo feat. void  (violin: Katali)",
+		"artist": "Sakuzyo feat. void (violin: Katali)",
 		"releaseVersion": "2.0.0",
 		"chapter": "星际之声",
 		"title_localized": {
@@ -8132,7 +8132,7 @@
 	{
 		"id": "antagonism",
 		"imageUrl": "/images/thumb/2/23/Songs_antagonism.png/256px-Songs_antagonism.png",
-		"artist": "Yooh vs. [[曲师列表#|]]",
+		"artist": "Yooh vs. siromaru",
 		"releaseVersion": "2.2.0",
 		"chapter": "Arcaea联动",
 		"title_localized": {
@@ -8873,7 +8873,7 @@
 	{
 		"id": "deus-judicium",
 		"imageUrl": "/images/thumb/c/c2/Songs_deus-judicium.png/256px-Songs_deus-judicium.png",
-		"artist": "黒皇帝 vs MI",
+		"artist": "黒皇帝 vs MIssionary",
 		"releaseVersion": "2.4.0",
 		"chapter": "炽热之心",
 		"title_localized": {
@@ -9309,7 +9309,7 @@
 			"default": "Love Splash"
 		},
 		"source_localized": {
-			"default": "Rotaeno Music Open Submission 2023"
+			"default": "Selected Work @ Rotaeno Music Open Submission 2023"
 		},
 		"charts": [
 			{
@@ -9348,7 +9348,7 @@
 			"default": "Starlight Traveler"
 		},
 		"source_localized": {
-			"default": "Rotaeno Music Open Submission 2023"
+			"default": "Selected Work @ Rotaeno Music Open Submission 2023"
 		},
 		"charts": [
 			{
@@ -9387,7 +9387,7 @@
 			"default": "Innocence Keeper"
 		},
 		"source_localized": {
-			"default": "Rotaeno Music Open Submission 2023"
+			"default": "Selected Work @ Rotaeno Music Open Submission 2023"
 		},
 		"charts": [
 			{
@@ -9426,7 +9426,7 @@
 			"default": "enter -MAGICAL CODE-"
 		},
 		"source_localized": {
-			"default": "Rotaeno Music Open Submission 2023"
+			"default": "Selected Work @ Rotaeno Music Open Submission 2023"
 		},
 		"charts": [
 			{
@@ -9465,7 +9465,7 @@
 			"default": "Toys' Nightlife Area"
 		},
 		"source_localized": {
-			"default": "Rotaeno Music Open Submission 2023"
+			"default": "Selected Work @ Rotaeno Music Open Submission 2023"
 		},
 		"charts": [
 			{
@@ -9504,7 +9504,7 @@
 			"default": "Uchronia"
 		},
 		"source_localized": {
-			"default": "Rotaeno Music Open Submission 2023"
+			"default": "Contest Winner @ Rotaeno Music Open Submission 2023"
 		},
 		"charts": [
 			{
@@ -9549,7 +9549,7 @@
 			"default": "Quadruplicity"
 		},
 		"source_localized": {
-			"default": "Rotaeno Music Open Submission 2023"
+			"default": "Selected Work @ Rotaeno Music Open Submission 2023"
 		},
 		"charts": [
 			{
@@ -9978,7 +9978,7 @@
 			"default": "Psalms ～魂の還るばしょ～"
 		},
 		"source_localized": {
-			"default": "Original"
+			"default": "BOFXVI"
 		},
 		"charts": [
 			{
@@ -10244,14 +10244,14 @@
 	{
 		"id": "aleph-0",
 		"imageUrl": "/images/thumb/a/a4/Songs_aleph-0.png/256px-Songs_aleph-0.png",
-		"artist": "Leaf",
+		"artist": "LeaF",
 		"releaseVersion": "2.8.0",
 		"chapter": "Ψ：脑波过载",
 		"title_localized": {
 			"default": "Aleph-0"
 		},
 		"source_localized": {
-			"default": "BOFU2015"
+			"default": "BOFU2016"
 		},
 		"charts": [
 			{
@@ -10335,7 +10335,7 @@
 			"default": "夢厭 con eleganza"
 		},
 		"source_localized": {
-			"default": "Original"
+			"default": "MUMEI Academy 2022"
 		},
 		"charts": [
 			{
@@ -10727,6 +10727,582 @@
 			},
 			{
 				"difficultyDecimal": 14.1,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "sword-of-convallaria",
+		"imageUrl": "/images/thumb/6/68/Songs_sword-of-convallaria.png/256px-Songs_sword-of-convallaria.png",
+		"artist": "崎元仁",
+		"releaseVersion": "2.10.0",
+		"chapter": "基础歌曲",
+		"title_localized": {
+			"default": "Sword of Convallaria"
+		},
+		"source_localized": {
+			"default": "Sword of Convallaria OST"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 2,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 5,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 7,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 11.1,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "harmonic-evasion-101",
+		"imageUrl": "/images/thumb/b/b6/Songs_harmonic-evasion-101.png/256px-Songs_harmonic-evasion-101.png",
+		"artist": "MEMODEMO × AQUASINE ^ Moon Jelly",
+		"releaseVersion": "2.10.0",
+		"chapter": "基础歌曲",
+		"title_localized": {
+			"default": "HARMONIC EVASION 101"
+		},
+		"source_localized": {
+			"default": "Selected Work @ Rotaeno Music Open Submission 2023"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 3,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 7,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 10.3,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 12.9,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "add-venturers",
+		"imageUrl": "/images/thumb/8/83/Songs_add-venturers.png/256px-Songs_add-venturers.png",
+		"artist": "otoshi.b",
+		"releaseVersion": "2.10.0",
+		"chapter": "Rotaeno学园祭",
+		"title_localized": {
+			"default": "add+venturers!"
+		},
+		"source_localized": {
+			"default": "Selected Work @ Rotaeno Music Open Submission 2023"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 3,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 6,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 9.8,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 12.4,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "call-my-number",
+		"imageUrl": "/images/thumb/b/be/Songs_call-my-number.png/256px-Songs_call-my-number.png",
+		"artist": "Zexnum",
+		"releaseVersion": "2.10.0",
+		"chapter": "Rotaeno学园祭",
+		"title_localized": {
+			"default": "Call My Number"
+		},
+		"source_localized": {
+			"default": "Selected Work @ Rotaeno Music Open Submission 2023"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 2,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 5,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 8.5,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 13.5,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "all-nighter",
+		"imageUrl": "/images/thumb/c/cc/Songs_all-nighter.png/256px-Songs_all-nighter.png",
+		"artist": "Turbo ft. Moon Jelly",
+		"releaseVersion": "2.10.0",
+		"chapter": "Rotaeno学园祭",
+		"title_localized": {
+			"default": "ALL☆NIGHTER！"
+		},
+		"source_localized": {
+			"default": "Selected Work @ Rotaeno Music Open Submission 2023"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 3,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 6,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 9.9,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 12.8,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 13.9,
+				"difficultyLevel": "IV-α",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "ninja-ish",
+		"imageUrl": "/images/thumb/5/58/Songs_ninja-ish.png/256px-Songs_ninja-ish.png",
+		"artist": "U-ske feat. ななひら",
+		"releaseVersion": "2.10.0",
+		"chapter": "Rotaeno学园祭",
+		"title_localized": {
+			"default": "NINJA-ish"
+		},
+		"source_localized": {
+			"default": "Selected Work @ Rotaeno Music Open Submission 2023"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 3,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 5,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 7.5,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 11.8,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 13.1,
+				"difficultyLevel": "IV-α",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "starstream-sky-dash",
+		"imageUrl": "/images/thumb/0/0f/Songs_starstream-sky-dash.png/256px-Songs_starstream-sky-dash.png",
+		"artist": "Violet Delta",
+		"releaseVersion": "2.10.0",
+		"chapter": "Rotaeno学园祭",
+		"title_localized": {
+			"default": "Starstream Sky Dash"
+		},
+		"source_localized": {
+			"default": "Selected Work @ Rotaeno Music Open Submission 2023"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 3,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 5,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 9.7,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 13.4,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "way-home",
+		"imageUrl": "/images/thumb/5/5f/Songs_way-home.png/256px-Songs_way-home.png",
+		"artist": "Mono.",
+		"releaseVersion": "2.10.0",
+		"chapter": "Rotaeno学园祭",
+		"title_localized": {
+			"default": "way home"
+		},
+		"source_localized": {
+			"default": "Contest Winner @ Rotaeno Music Open Submission 2023"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 3,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 5,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 11.5,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 13.9,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 14.1,
+				"difficultyLevel": "IV-α",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "wildcard",
+		"imageUrl": "/images/thumb/0/05/Songs_wildcard.png/256px-Songs_wildcard.png",
+		"artist": "KIRA",
+		"releaseVersion": "2.10.0",
+		"chapter": "向未来之声",
+		"title_localized": {
+			"default": "WILDCARD"
+		},
+		"source_localized": {
+			"default": "Original"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 2,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 6,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 8.9,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 12.5,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 13.5,
+				"difficultyLevel": "IV-α",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "monitoring",
+		"imageUrl": "/images/thumb/5/56/Songs_monitoring.png/256px-Songs_monitoring.png",
+		"artist": "DECO*27",
+		"releaseVersion": "2.10.0",
+		"chapter": "向未来之声",
+		"title_localized": {
+			"default": "モニタリング"
+		},
+		"source_localized": {
+			"default": "Original"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 3,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 7,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 10.5,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 13.2,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "rokutyounen",
+		"imageUrl": "/images/thumb/5/53/Songs_rokutyounen.png/256px-Songs_rokutyounen.png",
+		"artist": "kemu",
+		"releaseVersion": "2.10.0",
+		"chapter": "向未来之声",
+		"title_localized": {
+			"default": "六兆年と一夜物語"
+		},
+		"source_localized": {
+			"default": "Original"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 3,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 6,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 10.2,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 13.3,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 14.1,
+				"difficultyLevel": "IV-α",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "broomstick-adventure",
+		"imageUrl": "/images/thumb/5/54/Songs_broomstick-adventure.png/256px-Songs_broomstick-adventure.png",
+		"artist": "しーけー",
+		"releaseVersion": "2.10.0",
+		"chapter": "星际之声",
+		"title_localized": {
+			"default": "Broomstick adventure!"
+		},
+		"source_localized": {
+			"default": "Rotaeno Sound Collection"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 3,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 6,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 9.1,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 13,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "bounce-the-tech",
+		"imageUrl": "/images/thumb/2/21/Songs_bounce-the-tech.png/256px-Songs_bounce-the-tech.png",
+		"artist": "Sound piercer vs. Iriss",
+		"releaseVersion": "2.10.0",
+		"chapter": "星际之声",
+		"title_localized": {
+			"default": "BOUNCE THE TECH"
+		},
+		"source_localized": {
+			"default": "Original"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 3,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 7,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 11.2,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 13.2,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "from-zero",
+		"imageUrl": "/images/thumb/c/cb/Songs_from-zero.png/256px-Songs_from-zero.png",
+		"artist": "NekoHacker",
+		"releaseVersion": "2.10.0",
+		"chapter": "星际之声",
+		"title_localized": {
+			"default": "From Zero"
+		},
+		"source_localized": {
+			"default": "Original"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 3,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 7,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 10.6,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 12.6,
 				"difficultyLevel": "IV",
 				"chartDesigner": "",
 				"jacketDesigner": ""
