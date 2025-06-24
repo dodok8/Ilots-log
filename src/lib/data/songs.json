@@ -1443,6 +1443,20 @@
 		]
 	},
 	{
+		"id": "huggy-wuggy",
+		"imageUrl": "/images/thumb/a/a1/Songs_huggy-wuggy.png/256px-Songs_huggy-wuggy.png",
+		"artist": "ZxNX",
+		"releaseVersion": "1.0.3",
+		"chapter": "第一章 - 旅程的开始",
+		"title_localized": {
+			"default": "huggy wuggy"
+		},
+		"source_localized": {
+			"default": "Rotaeno Sound Collection"
+		},
+		"charts": []
+	},
+	{
 		"id": "a-philosophical-wanderer",
 		"imageUrl": "/images/thumb/5/51/Songs_a-philosophical-wanderer.png/256px-Songs_a-philosophical-wanderer.png",
 		"artist": "テヅカ x Yunosuke",
@@ -2299,6 +2313,20 @@
 				"jacketDesigner": ""
 			}
 		]
+	},
+	{
+		"id": "wakare-no-jokyoku",
+		"imageUrl": "/images/thumb/5/55/Songs_wakare-no-jokyoku.png/256px-Songs_wakare-no-jokyoku.png",
+		"artist": "HyuN feat. Sennzai",
+		"releaseVersion": "1.3.0",
+		"chapter": "基础歌曲",
+		"title_localized": {
+			"default": "別れの序曲"
+		},
+		"source_localized": {
+			"default": "Rotaeno Sound Collection"
+		},
+		"charts": []
 	},
 	{
 		"id": "let-you-dive",
@@ -7896,6 +7924,20 @@
 		]
 	},
 	{
+		"id": "devil-la6ue",
+		"imageUrl": "/images/thumb/1/12/Songs_devil-la6ue.png/256px-Songs_devil-la6ue.png",
+		"artist": "天々まる (prod. U-ske)",
+		"releaseVersion": "2.1.0",
+		"chapter": "跨次元之约",
+		"title_localized": {
+			"default": "devil¿la6ue"
+		},
+		"source_localized": {
+			"default": "Original"
+		},
+		"charts": []
+	},
+	{
 		"id": "aqua-theme",
 		"imageUrl": "/images/thumb/b/bc/Songs_aqua-theme.png/256px-Songs_aqua-theme.png",
 		"artist": "HyuN & MIIM",
@@ -10734,6 +10776,20 @@
 		]
 	},
 	{
+		"id": "nyarlathotep",
+		"imageUrl": "/images/thumb/4/46/Songs_nyarlathotep.png/256px-Songs_nyarlathotep.png",
+		"artist": "Hyphen",
+		"releaseVersion": "2.9.0",
+		"chapter": "Dynamix联动",
+		"title_localized": {
+			"default": "^/7(L|?[_(L+#<>+&|^(o)"
+		},
+		"source_localized": {
+			"default": "Dynamix ©C4Cat Entertainment Limited"
+		},
+		"charts": []
+	},
+	{
 		"id": "sword-of-convallaria",
 		"imageUrl": "/images/thumb/6/68/Songs_sword-of-convallaria.png/256px-Songs_sword-of-convallaria.png",
 		"artist": "崎元仁",
@@ -11308,5 +11364,89 @@
 				"jacketDesigner": ""
 			}
 		]
+	},
+	{
+		"id": "moonlight-fragrance",
+		"imageUrl": "/images/thumb/c/c8/Songs_moonlight-fragrance.png/256px-Songs_moonlight-fragrance.png",
+		"artist": "HΔG",
+		"releaseVersion": "2.11.0",
+		"chapter": "基础歌曲",
+		"title_localized": {
+			"default": "Moonlight Fragrance"
+		},
+		"source_localized": {
+			"default": "©2025 Rayark Inc. DEEMO Ⅱ®"
+		},
+		"charts": []
+	},
+	{
+		"id": "ameni-inoriwo",
+		"imageUrl": "/images/thumb/a/a4/Songs_ameni-inoriwo.png/256px-Songs_ameni-inoriwo.png",
+		"artist": "onoken feat. 木下珠子",
+		"releaseVersion": "2.11.0",
+		"chapter": "花雨旋律 DEEMO II 联动",
+		"title_localized": {
+			"default": "雨に祈りを"
+		},
+		"source_localized": {
+			"default": "©2025 Rayark Inc. DEEMO Ⅱ®"
+		},
+		"charts": []
+	},
+	{
+		"id": "blue-ixia",
+		"imageUrl": "/images/thumb/2/27/Songs_blue-ixia.png/256px-Songs_blue-ixia.png",
+		"artist": "effe",
+		"releaseVersion": "2.11.0",
+		"chapter": "花雨旋律 DEEMO II 联动",
+		"title_localized": {
+			"default": "Blue ixia"
+		},
+		"source_localized": {
+			"default": "©2025 Rayark Inc. DEEMO Ⅱ®"
+		},
+		"charts": []
+	},
+	{
+		"id": "kokoro-odoro",
+		"imageUrl": "/images/thumb/8/89/Songs_kokoro-odoro.png/256px-Songs_kokoro-odoro.png",
+		"artist": "Tomggg (feat. m/lue. )",
+		"releaseVersion": "2.11.0",
+		"chapter": "花雨旋律 DEEMO II 联动",
+		"title_localized": {
+			"default": "Kokoro Odoro"
+		},
+		"source_localized": {
+			"default": "©2025 Rayark Inc. DEEMO Ⅱ®"
+		},
+		"charts": []
+	},
+	{
+		"id": "indelible-yore",
+		"imageUrl": "/images/thumb/4/40/Songs_indelible-yore.png/256px-Songs_indelible-yore.png",
+		"artist": "Taishi",
+		"releaseVersion": "2.11.0",
+		"chapter": "花雨旋律 DEEMO II 联动",
+		"title_localized": {
+			"default": "Indelible Yore"
+		},
+		"source_localized": {
+			"default": "©2025 Rayark Inc. DEEMO Ⅱ®"
+		},
+		"charts": []
+	},
+	{
+		"id": "antikythera",
+		"imageUrl": "/images/thumb/8/87/Songs_antikythera.png/256px-Songs_antikythera.png",
+		"artist": "technoplanet",
+		"releaseVersion": "2.11.0",
+		"chapter": "花雨旋律 DEEMO II 联动",
+		"title_localized": {
+			"default": "Antikythera"
+		},
+		"source_localized": {
+			"default": "©2025 Rayark Inc. DEEMO Ⅱ®"
+		},
+		"charts": []
 	}
 ]
