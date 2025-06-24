@@ -1457,6 +1457,45 @@
 		"charts": []
 	},
 	{
+		"id": "huggy-wuggy",
+		"imageUrl": "/images/thumb/a/a1/Songs_huggy-wuggy.png/256px-Songs_huggy-wuggy.png",
+		"artist": "ZxNX",
+		"releaseVersion": "1.0.3",
+		"chapter": "第一章 - 旅程的开始",
+		"title_localized": {
+			"default": "huggy wuggy"
+		},
+		"source_localized": {
+			"default": "Rotaeno Sound Collection"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 3,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 5,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 10.4,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 11.7,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
 		"id": "a-philosophical-wanderer",
 		"imageUrl": "/images/thumb/5/51/Songs_a-philosophical-wanderer.png/256px-Songs_a-philosophical-wanderer.png",
 		"artist": "テヅカ x Yunosuke",
@@ -2327,6 +2366,45 @@
 			"default": "Rotaeno Sound Collection"
 		},
 		"charts": []
+	},
+	{
+		"id": "wakare-no-jokyoku",
+		"imageUrl": "/images/thumb/5/55/Songs_wakare-no-jokyoku.png/256px-Songs_wakare-no-jokyoku.png",
+		"artist": "HyuN feat. Sennzai",
+		"releaseVersion": "1.3.0",
+		"chapter": "基础歌曲",
+		"title_localized": {
+			"default": "別れの序曲"
+		},
+		"source_localized": {
+			"default": "Rotaeno Sound Collection"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 2,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 3,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 5,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 9,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
 	},
 	{
 		"id": "let-you-dive",
@@ -7938,6 +8016,45 @@
 		"charts": []
 	},
 	{
+		"id": "devil-la6ue",
+		"imageUrl": "/images/thumb/1/12/Songs_devil-la6ue.png/256px-Songs_devil-la6ue.png",
+		"artist": "天々まる (prod. U-ske)",
+		"releaseVersion": "2.1.0",
+		"chapter": "跨次元之约",
+		"title_localized": {
+			"default": "devil¿la6ue"
+		},
+		"source_localized": {
+			"default": "Original"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 2,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 5,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 8.8,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 12.5,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
 		"id": "aqua-theme",
 		"imageUrl": "/images/thumb/b/bc/Songs_aqua-theme.png/256px-Songs_aqua-theme.png",
 		"artist": "HyuN & MIIM",
@@ -10790,6 +10907,45 @@
 		"charts": []
 	},
 	{
+		"id": "nyarlathotep",
+		"imageUrl": "/images/thumb/4/46/Songs_nyarlathotep.png/256px-Songs_nyarlathotep.png",
+		"artist": "Hyphen",
+		"releaseVersion": "2.9.0",
+		"chapter": "Dynamix联动",
+		"title_localized": {
+			"default": "^/7(L|?[_(L+#<>+&|^(o)"
+		},
+		"source_localized": {
+			"default": "Dynamix ©C4Cat Entertainment Limited"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 3,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 6,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 9.4,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 12.9,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
 		"id": "sword-of-convallaria",
 		"imageUrl": "/images/thumb/6/68/Songs_sword-of-convallaria.png/256px-Songs_sword-of-convallaria.png",
 		"artist": "崎元仁",
@@ -11377,7 +11533,32 @@
 		"source_localized": {
 			"default": "©2025 Rayark Inc. DEEMO Ⅱ®"
 		},
-		"charts": []
+		"charts": [
+			{
+				"difficultyDecimal": 2,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 4,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 7,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 11.7,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
 	},
 	{
 		"id": "ameni-inoriwo",
@@ -11391,7 +11572,32 @@
 		"source_localized": {
 			"default": "©2025 Rayark Inc. DEEMO Ⅱ®"
 		},
-		"charts": []
+		"charts": [
+			{
+				"difficultyDecimal": 2,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 5,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 8.3,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 11.8,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
 	},
 	{
 		"id": "blue-ixia",
@@ -11405,7 +11611,32 @@
 		"source_localized": {
 			"default": "©2025 Rayark Inc. DEEMO Ⅱ®"
 		},
-		"charts": []
+		"charts": [
+			{
+				"difficultyDecimal": 2,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 5,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 8.6,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 12.6,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
 	},
 	{
 		"id": "kokoro-odoro",
@@ -11419,7 +11650,32 @@
 		"source_localized": {
 			"default": "©2025 Rayark Inc. DEEMO Ⅱ®"
 		},
-		"charts": []
+		"charts": [
+			{
+				"difficultyDecimal": 3,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 6,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 9,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 13,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
 	},
 	{
 		"id": "indelible-yore",
@@ -11433,7 +11689,32 @@
 		"source_localized": {
 			"default": "©2025 Rayark Inc. DEEMO Ⅱ®"
 		},
-		"charts": []
+		"charts": [
+			{
+				"difficultyDecimal": 3,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 7,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 10.6,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 13.8,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
 	},
 	{
 		"id": "antikythera",
@@ -11447,6 +11728,31 @@
 		"source_localized": {
 			"default": "©2025 Rayark Inc. DEEMO Ⅱ®"
 		},
-		"charts": []
+		"charts": [
+			{
+				"difficultyDecimal": 4,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 8,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 12,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 14.1,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
 	}
 ]
