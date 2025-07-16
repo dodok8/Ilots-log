@@ -1443,59 +1443,6 @@
 		]
 	},
 	{
-		"id": "huggy-wuggy",
-		"imageUrl": "/images/thumb/a/a1/Songs_huggy-wuggy.png/256px-Songs_huggy-wuggy.png",
-		"artist": "ZxNX",
-		"releaseVersion": "1.0.3",
-		"chapter": "第一章 - 旅程的开始",
-		"title_localized": {
-			"default": "huggy wuggy"
-		},
-		"source_localized": {
-			"default": "Rotaeno Sound Collection"
-		},
-		"charts": []
-	},
-	{
-		"id": "huggy-wuggy",
-		"imageUrl": "/images/thumb/a/a1/Songs_huggy-wuggy.png/256px-Songs_huggy-wuggy.png",
-		"artist": "ZxNX",
-		"releaseVersion": "1.0.3",
-		"chapter": "第一章 - 旅程的开始",
-		"title_localized": {
-			"default": "huggy wuggy"
-		},
-		"source_localized": {
-			"default": "Rotaeno Sound Collection"
-		},
-		"charts": [
-			{
-				"difficultyDecimal": 3,
-				"difficultyLevel": "I",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 5,
-				"difficultyLevel": "II",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 10.4,
-				"difficultyLevel": "III",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 11.7,
-				"difficultyLevel": "IV",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			}
-		]
-	},
-	{
 		"id": "a-philosophical-wanderer",
 		"imageUrl": "/images/thumb/5/51/Songs_a-philosophical-wanderer.png/256px-Songs_a-philosophical-wanderer.png",
 		"artist": "テヅカ x Yunosuke",
@@ -2347,59 +2294,6 @@
 			},
 			{
 				"difficultyDecimal": 12.9,
-				"difficultyLevel": "IV",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			}
-		]
-	},
-	{
-		"id": "wakare-no-jokyoku",
-		"imageUrl": "/images/thumb/5/55/Songs_wakare-no-jokyoku.png/256px-Songs_wakare-no-jokyoku.png",
-		"artist": "HyuN feat. Sennzai",
-		"releaseVersion": "1.3.0",
-		"chapter": "基础歌曲",
-		"title_localized": {
-			"default": "別れの序曲"
-		},
-		"source_localized": {
-			"default": "Rotaeno Sound Collection"
-		},
-		"charts": []
-	},
-	{
-		"id": "wakare-no-jokyoku",
-		"imageUrl": "/images/thumb/5/55/Songs_wakare-no-jokyoku.png/256px-Songs_wakare-no-jokyoku.png",
-		"artist": "HyuN feat. Sennzai",
-		"releaseVersion": "1.3.0",
-		"chapter": "基础歌曲",
-		"title_localized": {
-			"default": "別れの序曲"
-		},
-		"source_localized": {
-			"default": "Rotaeno Sound Collection"
-		},
-		"charts": [
-			{
-				"difficultyDecimal": 2,
-				"difficultyLevel": "I",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 3,
-				"difficultyLevel": "II",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 5,
-				"difficultyLevel": "III",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 9,
 				"difficultyLevel": "IV",
 				"chartDesigner": "",
 				"jacketDesigner": ""
@@ -6073,84 +5967,6 @@
 		]
 	},
 	{
-		"id": "today-is-not-tomorrow",
-		"imageUrl": "/images/thumb/5/59/Songs_today-is-not-tomorrow.png/256px-Songs_today-is-not-tomorrow.png",
-		"artist": "PIKASONIC feat.兰音Reine",
-		"releaseVersion": "1.14.1",
-		"chapter": "音波狂潮",
-		"title_localized": {
-			"default": "今天不是明天"
-		},
-		"source_localized": {
-			"default": "次元LAB二次元电音节"
-		},
-		"charts": [
-			{
-				"difficultyDecimal": 3,
-				"difficultyLevel": "I",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 6,
-				"difficultyLevel": "II",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 8.3,
-				"difficultyLevel": "III",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 11,
-				"difficultyLevel": "IV",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			}
-		]
-	},
-	{
-		"id": "love-you-i-imagined",
-		"imageUrl": "/images/thumb/5/5d/Songs_love-you-i-imagined.png/256px-Songs_love-you-i-imagined.png",
-		"artist": "KOTONOHOUSE feat.穆小泠",
-		"releaseVersion": "1.14.1",
-		"chapter": "音波狂潮",
-		"title_localized": {
-			"default": "爱上想象的你"
-		},
-		"source_localized": {
-			"default": "次元LAB二次元电音节"
-		},
-		"charts": [
-			{
-				"difficultyDecimal": 3,
-				"difficultyLevel": "I",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 6,
-				"difficultyLevel": "II",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 8.4,
-				"difficultyLevel": "III",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 12.2,
-				"difficultyLevel": "IV",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			}
-		]
-	},
-	{
 		"id": "galaxy-striker",
 		"imageUrl": "/images/thumb/2/2e/Songs_galaxy-striker.png/256px-Songs_galaxy-striker.png",
 		"artist": "M2U",
@@ -6222,6 +6038,84 @@
 			},
 			{
 				"difficultyDecimal": 13.2,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "today-is-not-tomorrow",
+		"imageUrl": "/images/thumb/5/59/Songs_today-is-not-tomorrow.png/256px-Songs_today-is-not-tomorrow.png",
+		"artist": "PIKASONIC feat.兰音Reine",
+		"releaseVersion": "1.14.1",
+		"chapter": "音波狂潮",
+		"title_localized": {
+			"default": "今天不是明天"
+		},
+		"source_localized": {
+			"default": "次元LAB二次元电音节"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 3,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 6,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 8.3,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 11,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "love-you-i-imagined",
+		"imageUrl": "/images/thumb/5/5d/Songs_love-you-i-imagined.png/256px-Songs_love-you-i-imagined.png",
+		"artist": "KOTONOHOUSE feat.穆小泠",
+		"releaseVersion": "1.14.1",
+		"chapter": "音波狂潮",
+		"title_localized": {
+			"default": "爱上想象的你"
+		},
+		"source_localized": {
+			"default": "次元LAB二次元电音节"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 3,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 6,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 8.4,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 12.2,
 				"difficultyLevel": "IV",
 				"chartDesigner": "",
 				"jacketDesigner": ""
@@ -8002,59 +7896,6 @@
 		]
 	},
 	{
-		"id": "devil-la6ue",
-		"imageUrl": "/images/thumb/1/12/Songs_devil-la6ue.png/256px-Songs_devil-la6ue.png",
-		"artist": "天々まる (prod. U-ske)",
-		"releaseVersion": "2.1.0",
-		"chapter": "跨次元之约",
-		"title_localized": {
-			"default": "devil¿la6ue"
-		},
-		"source_localized": {
-			"default": "Original"
-		},
-		"charts": []
-	},
-	{
-		"id": "devil-la6ue",
-		"imageUrl": "/images/thumb/1/12/Songs_devil-la6ue.png/256px-Songs_devil-la6ue.png",
-		"artist": "天々まる (prod. U-ske)",
-		"releaseVersion": "2.1.0",
-		"chapter": "跨次元之约",
-		"title_localized": {
-			"default": "devil¿la6ue"
-		},
-		"source_localized": {
-			"default": "Original"
-		},
-		"charts": [
-			{
-				"difficultyDecimal": 2,
-				"difficultyLevel": "I",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 5,
-				"difficultyLevel": "II",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 8.8,
-				"difficultyLevel": "III",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 12.5,
-				"difficultyLevel": "IV",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			}
-		]
-	},
-	{
 		"id": "aqua-theme",
 		"imageUrl": "/images/thumb/b/bc/Songs_aqua-theme.png/256px-Songs_aqua-theme.png",
 		"artist": "HyuN & MIIM",
@@ -9498,6 +9339,162 @@
 		]
 	},
 	{
+		"id": "burn-it-up",
+		"imageUrl": "/images/thumb/3/36/Songs_burn-it-up.png/256px-Songs_burn-it-up.png",
+		"artist": "负离子SYNTHETIC feat.黑泽诺亚NOIR",
+		"releaseVersion": "2.6.0",
+		"chapter": "音波狂潮",
+		"title_localized": {
+			"default": "恶修女——永火熔铸"
+		},
+		"source_localized": {
+			"default": "次元LAB二次元电音节"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 2,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 5,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 8.8,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 12.7,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "fall-in-me",
+		"imageUrl": "/images/thumb/2/2b/Songs_fall-in-me.png/256px-Songs_fall-in-me.png",
+		"artist": "memex",
+		"releaseVersion": "2.6.0",
+		"chapter": "星觅典藏",
+		"title_localized": {
+			"default": "Fall in Me"
+		},
+		"source_localized": {
+			"default": "Original"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 2,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 5,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 8.5,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 12,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "night-sky",
+		"imageUrl": "/images/thumb/6/6e/Songs_night-sky.png/256px-Songs_night-sky.png",
+		"artist": "Neko Hacker",
+		"releaseVersion": "2.6.0",
+		"chapter": "星觅典藏",
+		"title_localized": {
+			"default": "Night Sky"
+		},
+		"source_localized": {
+			"default": "Original"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 2,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 5,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 9.2,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 11.6,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "enchanted-love",
+		"imageUrl": "/images/thumb/4/4a/Songs_enchanted-love.png/256px-Songs_enchanted-love.png",
+		"artist": "linear ring",
+		"releaseVersion": "2.6.0",
+		"chapter": "星觅典藏",
+		"title_localized": {
+			"default": "enchanted love"
+		},
+		"source_localized": {
+			"default": "Original"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 3,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 6,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 10.5,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 12.2,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
 		"id": "starlight-traveler",
 		"imageUrl": "/images/thumb/d/d0/Songs_starlight-traveler.png/256px-Songs_starlight-traveler.png",
 		"artist": "ああああ＋打打だいず",
@@ -9738,20 +9735,20 @@
 		]
 	},
 	{
-		"id": "burn-it-up",
-		"imageUrl": "/images/thumb/3/36/Songs_burn-it-up.png/256px-Songs_burn-it-up.png",
-		"artist": "负离子SYNTHETIC feat.黑泽诺亚NOIR",
+		"id": "clock-paradox",
+		"imageUrl": "/images/thumb/9/9e/Songs_clock-paradox.png/256px-Songs_clock-paradox.png",
+		"artist": "WyvernP",
 		"releaseVersion": "2.6.0",
-		"chapter": "音波狂潮",
+		"chapter": "律动轨迹联动",
 		"title_localized": {
-			"default": "恶修女——永火熔铸"
+			"default": "Clock Paradox"
 		},
 		"source_localized": {
-			"default": "次元LAB二次元电音节"
+			"default": "Rizline"
 		},
 		"charts": [
 			{
-				"difficultyDecimal": 2,
+				"difficultyDecimal": 3,
 				"difficultyLevel": "I",
 				"chartDesigner": "",
 				"jacketDesigner": ""
@@ -9763,13 +9760,13 @@
 				"jacketDesigner": ""
 			},
 			{
-				"difficultyDecimal": 8.8,
+				"difficultyDecimal": 8.3,
 				"difficultyLevel": "III",
 				"chartDesigner": "",
 				"jacketDesigner": ""
 			},
 			{
-				"difficultyDecimal": 12.7,
+				"difficultyDecimal": 11.7,
 				"difficultyLevel": "IV",
 				"chartDesigner": "",
 				"jacketDesigner": ""
@@ -9816,45 +9813,6 @@
 		]
 	},
 	{
-		"id": "clock-paradox",
-		"imageUrl": "/images/thumb/9/9e/Songs_clock-paradox.png/256px-Songs_clock-paradox.png",
-		"artist": "WyvernP",
-		"releaseVersion": "2.6.0",
-		"chapter": "律动轨迹联动",
-		"title_localized": {
-			"default": "Clock Paradox"
-		},
-		"source_localized": {
-			"default": "Rizline"
-		},
-		"charts": [
-			{
-				"difficultyDecimal": 3,
-				"difficultyLevel": "I",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 5,
-				"difficultyLevel": "II",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 8.3,
-				"difficultyLevel": "III",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 11.7,
-				"difficultyLevel": "IV",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			}
-		]
-	},
-	{
 		"id": "brave-road",
 		"imageUrl": "/images/thumb/2/24/Songs_brave-road.png/256px-Songs_brave-road.png",
 		"artist": "uma vs. モリモリあつし",
@@ -9887,123 +9845,6 @@
 			},
 			{
 				"difficultyDecimal": 13.8,
-				"difficultyLevel": "IV",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			}
-		]
-	},
-	{
-		"id": "fall-in-me",
-		"imageUrl": "/images/thumb/2/2b/Songs_fall-in-me.png/256px-Songs_fall-in-me.png",
-		"artist": "memex",
-		"releaseVersion": "2.6.0",
-		"chapter": "星觅典藏",
-		"title_localized": {
-			"default": "Fall in Me"
-		},
-		"source_localized": {
-			"default": "Original"
-		},
-		"charts": [
-			{
-				"difficultyDecimal": 2,
-				"difficultyLevel": "I",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 5,
-				"difficultyLevel": "II",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 8.5,
-				"difficultyLevel": "III",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 12,
-				"difficultyLevel": "IV",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			}
-		]
-	},
-	{
-		"id": "night-sky",
-		"imageUrl": "/images/thumb/6/6e/Songs_night-sky.png/256px-Songs_night-sky.png",
-		"artist": "Neko Hacker",
-		"releaseVersion": "2.6.0",
-		"chapter": "星觅典藏",
-		"title_localized": {
-			"default": "Night Sky"
-		},
-		"source_localized": {
-			"default": "Original"
-		},
-		"charts": [
-			{
-				"difficultyDecimal": 2,
-				"difficultyLevel": "I",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 5,
-				"difficultyLevel": "II",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 9.2,
-				"difficultyLevel": "III",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 11.6,
-				"difficultyLevel": "IV",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			}
-		]
-	},
-	{
-		"id": "enchanted-love",
-		"imageUrl": "/images/thumb/4/4a/Songs_enchanted-love.png/256px-Songs_enchanted-love.png",
-		"artist": "linear ring",
-		"releaseVersion": "2.6.0",
-		"chapter": "星觅典藏",
-		"title_localized": {
-			"default": "enchanted love"
-		},
-		"source_localized": {
-			"default": "Original"
-		},
-		"charts": [
-			{
-				"difficultyDecimal": 3,
-				"difficultyLevel": "I",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 6,
-				"difficultyLevel": "II",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 10.5,
-				"difficultyLevel": "III",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 12.2,
 				"difficultyLevel": "IV",
 				"chartDesigner": "",
 				"jacketDesigner": ""
@@ -10893,59 +10734,6 @@
 		]
 	},
 	{
-		"id": "nyarlathotep",
-		"imageUrl": "/images/thumb/4/46/Songs_nyarlathotep.png/256px-Songs_nyarlathotep.png",
-		"artist": "Hyphen",
-		"releaseVersion": "2.9.0",
-		"chapter": "Dynamix联动",
-		"title_localized": {
-			"default": "^/7(L|?[_(L+#<>+&|^(o)"
-		},
-		"source_localized": {
-			"default": "Dynamix ©C4Cat Entertainment Limited"
-		},
-		"charts": []
-	},
-	{
-		"id": "nyarlathotep",
-		"imageUrl": "/images/thumb/4/46/Songs_nyarlathotep.png/256px-Songs_nyarlathotep.png",
-		"artist": "Hyphen",
-		"releaseVersion": "2.9.0",
-		"chapter": "Dynamix联动",
-		"title_localized": {
-			"default": "^/7(L|?[_(L+#<>+&|^(o)"
-		},
-		"source_localized": {
-			"default": "Dynamix ©C4Cat Entertainment Limited"
-		},
-		"charts": [
-			{
-				"difficultyDecimal": 3,
-				"difficultyLevel": "I",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 6,
-				"difficultyLevel": "II",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 9.4,
-				"difficultyLevel": "III",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 12.9,
-				"difficultyLevel": "IV",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			}
-		]
-	},
-	{
 		"id": "sword-of-convallaria",
 		"imageUrl": "/images/thumb/6/68/Songs_sword-of-convallaria.png/256px-Songs_sword-of-convallaria.png",
 		"artist": "崎元仁",
@@ -11018,6 +10806,252 @@
 			{
 				"difficultyDecimal": 12.9,
 				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "broomstick-adventure",
+		"imageUrl": "/images/thumb/5/54/Songs_broomstick-adventure.png/256px-Songs_broomstick-adventure.png",
+		"artist": "しーけー",
+		"releaseVersion": "2.10.0",
+		"chapter": "星际之声",
+		"title_localized": {
+			"default": "Broomstick adventure!"
+		},
+		"source_localized": {
+			"default": "Rotaeno Sound Collection"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 3,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 6,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 9.1,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 13,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "bounce-the-tech",
+		"imageUrl": "/images/thumb/2/21/Songs_bounce-the-tech.png/256px-Songs_bounce-the-tech.png",
+		"artist": "Sound piercer vs. Iriss",
+		"releaseVersion": "2.10.0",
+		"chapter": "星际之声",
+		"title_localized": {
+			"default": "BOUNCE THE TECH"
+		},
+		"source_localized": {
+			"default": "Original"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 3,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 7,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 11.2,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 13.2,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "from-zero",
+		"imageUrl": "/images/thumb/c/cb/Songs_from-zero.png/256px-Songs_from-zero.png",
+		"artist": "NekoHacker",
+		"releaseVersion": "2.10.0",
+		"chapter": "星际之声",
+		"title_localized": {
+			"default": "From Zero"
+		},
+		"source_localized": {
+			"default": "Original"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 3,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 7,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 10.6,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 12.6,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "wildcard",
+		"imageUrl": "/images/thumb/0/05/Songs_wildcard.png/256px-Songs_wildcard.png",
+		"artist": "KIRA",
+		"releaseVersion": "2.10.0",
+		"chapter": "向未来之声",
+		"title_localized": {
+			"default": "WILDCARD"
+		},
+		"source_localized": {
+			"default": "Original"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 2,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 6,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 8.9,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 12.5,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 13.5,
+				"difficultyLevel": "IV-α",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "monitoring",
+		"imageUrl": "/images/thumb/5/56/Songs_monitoring.png/256px-Songs_monitoring.png",
+		"artist": "DECO*27",
+		"releaseVersion": "2.10.0",
+		"chapter": "向未来之声",
+		"title_localized": {
+			"default": "モニタリング"
+		},
+		"source_localized": {
+			"default": "Original"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 3,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 7,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 10.5,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 13.2,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "rokutyounen",
+		"imageUrl": "/images/thumb/5/53/Songs_rokutyounen.png/256px-Songs_rokutyounen.png",
+		"artist": "kemu",
+		"releaseVersion": "2.10.0",
+		"chapter": "向未来之声",
+		"title_localized": {
+			"default": "六兆年と一夜物語"
+		},
+		"source_localized": {
+			"default": "Original"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 3,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 6,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 10.2,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 13.3,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 14.1,
+				"difficultyLevel": "IV-α",
 				"chartDesigner": "",
 				"jacketDesigner": ""
 			}
@@ -11270,252 +11304,6 @@
 			{
 				"difficultyDecimal": 14.1,
 				"difficultyLevel": "IV-α",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			}
-		]
-	},
-	{
-		"id": "wildcard",
-		"imageUrl": "/images/thumb/0/05/Songs_wildcard.png/256px-Songs_wildcard.png",
-		"artist": "KIRA",
-		"releaseVersion": "2.10.0",
-		"chapter": "向未来之声",
-		"title_localized": {
-			"default": "WILDCARD"
-		},
-		"source_localized": {
-			"default": "Original"
-		},
-		"charts": [
-			{
-				"difficultyDecimal": 2,
-				"difficultyLevel": "I",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 6,
-				"difficultyLevel": "II",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 8.9,
-				"difficultyLevel": "III",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 12.5,
-				"difficultyLevel": "IV",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 13.5,
-				"difficultyLevel": "IV-α",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			}
-		]
-	},
-	{
-		"id": "monitoring",
-		"imageUrl": "/images/thumb/5/56/Songs_monitoring.png/256px-Songs_monitoring.png",
-		"artist": "DECO*27",
-		"releaseVersion": "2.10.0",
-		"chapter": "向未来之声",
-		"title_localized": {
-			"default": "モニタリング"
-		},
-		"source_localized": {
-			"default": "Original"
-		},
-		"charts": [
-			{
-				"difficultyDecimal": 3,
-				"difficultyLevel": "I",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 7,
-				"difficultyLevel": "II",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 10.5,
-				"difficultyLevel": "III",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 13.2,
-				"difficultyLevel": "IV",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			}
-		]
-	},
-	{
-		"id": "rokutyounen",
-		"imageUrl": "/images/thumb/5/53/Songs_rokutyounen.png/256px-Songs_rokutyounen.png",
-		"artist": "kemu",
-		"releaseVersion": "2.10.0",
-		"chapter": "向未来之声",
-		"title_localized": {
-			"default": "六兆年と一夜物語"
-		},
-		"source_localized": {
-			"default": "Original"
-		},
-		"charts": [
-			{
-				"difficultyDecimal": 3,
-				"difficultyLevel": "I",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 6,
-				"difficultyLevel": "II",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 10.2,
-				"difficultyLevel": "III",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 13.3,
-				"difficultyLevel": "IV",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 14.1,
-				"difficultyLevel": "IV-α",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			}
-		]
-	},
-	{
-		"id": "broomstick-adventure",
-		"imageUrl": "/images/thumb/5/54/Songs_broomstick-adventure.png/256px-Songs_broomstick-adventure.png",
-		"artist": "しーけー",
-		"releaseVersion": "2.10.0",
-		"chapter": "星际之声",
-		"title_localized": {
-			"default": "Broomstick adventure!"
-		},
-		"source_localized": {
-			"default": "Rotaeno Sound Collection"
-		},
-		"charts": [
-			{
-				"difficultyDecimal": 3,
-				"difficultyLevel": "I",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 6,
-				"difficultyLevel": "II",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 9.1,
-				"difficultyLevel": "III",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 13,
-				"difficultyLevel": "IV",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			}
-		]
-	},
-	{
-		"id": "bounce-the-tech",
-		"imageUrl": "/images/thumb/2/21/Songs_bounce-the-tech.png/256px-Songs_bounce-the-tech.png",
-		"artist": "Sound piercer vs. Iriss",
-		"releaseVersion": "2.10.0",
-		"chapter": "星际之声",
-		"title_localized": {
-			"default": "BOUNCE THE TECH"
-		},
-		"source_localized": {
-			"default": "Original"
-		},
-		"charts": [
-			{
-				"difficultyDecimal": 3,
-				"difficultyLevel": "I",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 7,
-				"difficultyLevel": "II",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 11.2,
-				"difficultyLevel": "III",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 13.2,
-				"difficultyLevel": "IV",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			}
-		]
-	},
-	{
-		"id": "from-zero",
-		"imageUrl": "/images/thumb/c/cb/Songs_from-zero.png/256px-Songs_from-zero.png",
-		"artist": "NekoHacker",
-		"releaseVersion": "2.10.0",
-		"chapter": "星际之声",
-		"title_localized": {
-			"default": "From Zero"
-		},
-		"source_localized": {
-			"default": "Original"
-		},
-		"charts": [
-			{
-				"difficultyDecimal": 3,
-				"difficultyLevel": "I",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 7,
-				"difficultyLevel": "II",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 10.6,
-				"difficultyLevel": "III",
-				"chartDesigner": "",
-				"jacketDesigner": ""
-			},
-			{
-				"difficultyDecimal": 12.6,
-				"difficultyLevel": "IV",
 				"chartDesigner": "",
 				"jacketDesigner": ""
 			}
