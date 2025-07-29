@@ -2301,6 +2301,45 @@
 		]
 	},
 	{
+		"id": "sweet-dreams",
+		"imageUrl": "/images/thumb/7/76/Songs_sweet-dreams.png/256px-Songs_sweet-dreams.png",
+		"artist": "Neko Hacker",
+		"releaseVersion": "1.3.0",
+		"chapter": "深夏清梦",
+		"title_localized": {
+			"default": "Sweet Dreams feat. 利香 (short ver.)"
+		},
+		"source_localized": {
+			"default": "Original"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 2,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 5,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 8.7,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 11.8,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
 		"id": "let-you-dive",
 		"imageUrl": "/images/thumb/9/9c/Songs_let-you-dive.png/256px-Songs_let-you-dive.png",
 		"artist": "HARDCORE TANO*C & エリザベス（CV:大西沙織）",
@@ -6435,6 +6474,20 @@
 		]
 	},
 	{
+		"id": "",
+		"imageUrl": "",
+		"artist": "黑瘦的鱼头\n",
+		"releaseVersion": "1.15.441\n",
+		"chapter": "-\n",
+		"title_localized": {
+			"default": "Oiiaioooooiai"
+		},
+		"source_localized": {
+			"default": "Original"
+		},
+		"charts": []
+	},
+	{
 		"id": "apocalypse",
 		"imageUrl": "/images/thumb/6/6b/Songs_apocalypse.png/256px-Songs_apocalypse.png",
 		"artist": "Alice Schach and the Magic Orchestra",
@@ -9852,6 +9905,45 @@
 		]
 	},
 	{
+		"id": "night-sky",
+		"imageUrl": "/images/thumb/6/6e/Songs_night-sky.png/256px-Songs_night-sky.png",
+		"artist": "Neko Hacker",
+		"releaseVersion": "2.6.0",
+		"chapter": "星觅典藏",
+		"title_localized": {
+			"default": "Night Sky feat. Mashilo & ichika"
+		},
+		"source_localized": {
+			"default": "Original"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 2,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 5,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 9.2,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 11.6,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
 		"id": "convallaria",
 		"imageUrl": "/images/thumb/c/c4/Songs_convallaria.png/256px-Songs_convallaria.png",
 		"artist": "GARNiDELiA",
@@ -10734,6 +10826,45 @@
 		]
 	},
 	{
+		"id": "nyarlathotep",
+		"imageUrl": "/images/thumb/4/46/Songs_nyarlathotep.png/256px-Songs_nyarlathotep.png",
+		"artist": "Hyphen",
+		"releaseVersion": "2.9.0",
+		"chapter": "Dynamix 联动",
+		"title_localized": {
+			"default": "^/7(L|?[_(L+#<>+&|^(o)"
+		},
+		"source_localized": {
+			"default": "Dynamix ©C4Cat Entertainment Limited"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 3,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 6,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 9.4,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 12.9,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
 		"id": "sword-of-convallaria",
 		"imageUrl": "/images/thumb/6/68/Songs_sword-of-convallaria.png/256px-Songs_sword-of-convallaria.png",
 		"artist": "崎元仁",
@@ -11310,6 +11441,45 @@
 		]
 	},
 	{
+		"id": "from-zero",
+		"imageUrl": "/images/thumb/c/cb/Songs_from-zero.png/256px-Songs_from-zero.png",
+		"artist": "Neko Hacker",
+		"releaseVersion": "2.10.0",
+		"chapter": "星际之声",
+		"title_localized": {
+			"default": "From Zero feat. 利香"
+		},
+		"source_localized": {
+			"default": "Original"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 3,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 7,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 10.6,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 12.6,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
 		"id": "moonlight-fragrance",
 		"imageUrl": "/images/thumb/c/c8/Songs_moonlight-fragrance.png/256px-Songs_moonlight-fragrance.png",
 		"artist": "HΔG",
@@ -11537,6 +11707,240 @@
 			},
 			{
 				"difficultyDecimal": 14.1,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "tsuyo-tsuyo-nasuburou-chan",
+		"imageUrl": "/images/thumb/a/aa/Songs_tsuyo-tsuyo-nasuburou-chan.png/256px-Songs_tsuyo-tsuyo-nasuburou-chan.png",
+		"artist": "コバヤシユウヤ(IOSYS)",
+		"releaseVersion": "2.12.0",
+		"chapter": "Muse Dash 联动",
+		"title_localized": {
+			"default": "つよつよナースブロウちゃん！"
+		},
+		"source_localized": {
+			"default": "Muse Dash"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 3,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 6,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 9,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 12.6,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "cthugha",
+		"imageUrl": "/images/thumb/f/f5/Songs_cthugha.png/256px-Songs_cthugha.png",
+		"artist": "USAO",
+		"releaseVersion": "2.12.0",
+		"chapter": "Muse Dash 联动",
+		"title_localized": {
+			"default": "Cthugha"
+		},
+		"source_localized": {
+			"default": "Muse Dash"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 2,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 6,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 10.2,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 12.9,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "heartache",
+		"imageUrl": "/images/thumb/c/c2/Songs_heartache.png/256px-Songs_heartache.png",
+		"artist": "technoplanet feat. Risa Yuzuki",
+		"releaseVersion": "2.12.0",
+		"chapter": "Muse Dash 联动",
+		"title_localized": {
+			"default": "Heartache"
+		},
+		"source_localized": {
+			"default": "Muse Dash"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 3,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 7,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 10,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 13.9,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "tianlingling",
+		"imageUrl": "/images/thumb/0/01/Songs_tianlingling.png/256px-Songs_tianlingling.png",
+		"artist": "iKz feat.小可学妹",
+		"releaseVersion": "2.12.0",
+		"chapter": "Muse Dash 联动",
+		"title_localized": {
+			"default": "天灵灵地灵灵"
+		},
+		"source_localized": {
+			"default": "Muse Dash"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 2,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 7,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 9.8,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 13.1,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "ruby-linte",
+		"imageUrl": "/images/thumb/3/3d/Songs_ruby-linte.png/256px-Songs_ruby-linte.png",
+		"artist": "orangentle",
+		"releaseVersion": "2.12.0",
+		"chapter": "Muse Dash 联动",
+		"title_localized": {
+			"default": "ЯUBY:LINTe"
+		},
+		"source_localized": {
+			"default": "Muse Dash"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 4,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 8.8,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 12.4,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 14.2,
+				"difficultyLevel": "IV",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			}
+		]
+	},
+	{
+		"id": "smile-miles",
+		"imageUrl": "/images/thumb/d/d9/Songs_smile-miles.png/256px-Songs_smile-miles.png",
+		"artist": "onoken",
+		"releaseVersion": "2.12.0",
+		"chapter": "基础歌曲",
+		"title_localized": {
+			"default": "Smile-mileS"
+		},
+		"source_localized": {
+			"default": "Muse Dash"
+		},
+		"charts": [
+			{
+				"difficultyDecimal": 4,
+				"difficultyLevel": "I",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 6,
+				"difficultyLevel": "II",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 9.6,
+				"difficultyLevel": "III",
+				"chartDesigner": "",
+				"jacketDesigner": ""
+			},
+			{
+				"difficultyDecimal": 12.7,
 				"difficultyLevel": "IV",
 				"chartDesigner": "",
 				"jacketDesigner": ""
