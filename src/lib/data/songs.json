@@ -6474,20 +6474,6 @@
 		]
 	},
 	{
-		"id": "",
-		"imageUrl": "",
-		"artist": "黑瘦的鱼头\n",
-		"releaseVersion": "1.15.441\n",
-		"chapter": "-\n",
-		"title_localized": {
-			"default": "Oiiaioooooiai"
-		},
-		"source_localized": {
-			"default": "Original"
-		},
-		"charts": []
-	},
-	{
 		"id": "apocalypse",
 		"imageUrl": "/images/thumb/6/6b/Songs_apocalypse.png/256px-Songs_apocalypse.png",
 		"artist": "Alice Schach and the Magic Orchestra",
