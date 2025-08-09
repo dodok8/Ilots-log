@@ -4799,7 +4799,7 @@
 	{
 		"id": "eternal-calm",
 		"imageUrl": "/images/thumb/c/c7/Songs_eternal-calm.png/256px-Songs_eternal-calm.png",
-		"artist": "パパ頑�]]�[[曲师列表#�りました|�りました]])",
+		"artist": "長沼浩太(パパ頑張りました)",
 		"releaseVersion": "1.11.0",
 		"chapter": "我们的相遇",
 		"title_localized": {
@@ -6472,20 +6472,6 @@
 				"jacketDesigner": ""
 			}
 		]
-	},
-	{
-		"id": "",
-		"imageUrl": "",
-		"artist": "黑瘦的鱼头\n",
-		"releaseVersion": "1.15.441\n",
-		"chapter": "-\n",
-		"title_localized": {
-			"default": "Oiiaioooooiai"
-		},
-		"source_localized": {
-			"default": "Original"
-		},
-		"charts": []
 	},
 	{
 		"id": "apocalypse",
